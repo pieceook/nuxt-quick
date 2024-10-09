@@ -2,7 +2,7 @@
 const { locale } = useI18n()
 
 const updateFn = (title: string | undefined) => {
-  return title || 'NuxtQuick'
+  return title || 'Pieceook'
 }
 
 useHead({

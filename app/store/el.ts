@@ -11,6 +11,7 @@ export const useElScrollStore = defineStore('el-scroll', {
   actions: {
     update(key: string, newPosition: ScrollPosition) {
       this.map[key] = { ...this.map[key], ...newPosition }
+      console.error()
     }
   }
 })

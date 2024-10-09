@@ -1,16 +1,16 @@
-@import 'element-plus/theme-chalk/dark/css-vars.css';
+@import "element-plus/theme-chalk/dark/css-vars.css";
 
 :root {
   --color-fff-222: #ffffff;
   --color-000-ffaf1a: #000000;
   --color-000-fff: #000000;
-  --site-logo-text-bg: url('#{$CDN_URL}/images/icon-site-logo-text.light.svg');
+  --site-logo-text-bg: url("#{$CDN_URL}/images/icon-site-logo-text.light.svg");
 }
 
-:root[class='dark'] {
+:root[class="dark"] {
   color-scheme: dark;
 
-  --site-logo-text-bg: url('#{$CDN_URL}/images/icon-site-logo-text.dark.svg');
+  --site-logo-text-bg: url("#{$CDN_URL}/images/icon-site-logo-text.dark.svg");
   --color-fff-222: #222222;
   --color-000-ffaf1a: #ffaf1a;
   --color-000-fff: #ffffff;

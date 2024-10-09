@@ -2,18 +2,20 @@
 import { useSiteStore } from '@/store/index'
 
 const { t } = useI18n()
+
 const localePath = useLocalePath()
+
 const siteStore = useSiteStore()
 
 const menuArr = [
   { text: computed(() => t('site.Home')), path: localePath('/'), iconClass: 'i-codicon:home w-[24px] h-[24px]' },
-  { text: computed(() => t('site.Blog')), path: localePath('/article'), iconClass: 'i-heroicons:book-open w-[24px] h-[24px]' },
-  { text: 'GitHub', href: GITHUB_URL, iconClass: 'i-iconoir:github w-[24px] h-[24px]' },
+  // { text: computed(() => t('site.Blog')), path: localePath('/'), iconClass: 'i-heroicons:book-open w-[24px] h-[24px]' },
+  { text: 'Github', href: GITHUB_URL, iconClass: 'i-iconoir:github w-[24px] h-[24px]' },
 ]
 </script>
 
 <template>
-  <header class="com-header sticky top-0 z-1 h-[60px] w-full bg-[var(--color-fff-222)] shadow-md lt-sm:h-[50px]">
+  <header class="sticky top-0 z-1 h-[60px] w-full bg-[var(--color-fff-222)] shadow-md lt-sm:h-[50px]">
     <div class="h-full flex justify-between def-media">
       <div class="w-full flex">
         <NuxtLink :to="localePath('/')" class="flex items-center justify-center">

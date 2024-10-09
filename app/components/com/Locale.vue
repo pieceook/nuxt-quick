@@ -2,6 +2,7 @@
 import { Select } from '@element-plus/icons-vue'
 
 const { locale, locales } = useI18n()
+
 const switchLocalePath = useSwitchLocalePath()
 </script>
 
@@ -10,6 +11,7 @@ const switchLocalePath = useSwitchLocalePath()
     <ElDropdown placement="bottom" trigger="click">
       <el-button class="r-[8px] mr-[0] pl-[15px] pr-[12px] hover-z-2 dark:mr-[0] !b-none !py-[17px] lt-sm:!bg-transparent lt-sm:!px-0">
         <div class="i-prime:language h-[30px] w-[30px] lt-sm:mr-[-4px]" />
+        <!-- <div class="i-iconamoon:arrow-down-2-duotone h-[26px] w-[26px] lt-sm:hidden" /> -->
       </el-button>
       <template #dropdown>
         <ElDropdownMenu>
