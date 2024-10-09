@@ -56,7 +56,7 @@
       "Nuxt": {
         "desc": "基於Vue的SSR框架"
       },
-      "Typescript": {
+      "TypeScript": {
         "desc": "一種靜態型別、弱型別語言，JavaScript的超集"
       },
       "Vue": {

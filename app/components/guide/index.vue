@@ -28,10 +28,10 @@ const subArr: SubArrInter[] = [
     items: [
       { text: 'Nuxt', desc: t('site.Framework.Nuxt.desc'), iconClass: 'i-cib:nuxt-js min-w-[32px] min-h-[32px] bg-#00dc82', officialLink: 'https://github.com/nuxt/nuxt' },
       { text: 'Vue', desc: t('site.Framework.Vue.desc'), iconClass: 'i-iconoir:vue-js min-w-[32px] min-h-[32px] bg-#41b883', officialLink: 'https://github.com/vuejs/core' },
-      { text: 'Typescript', desc: t('site.Framework.Typescript.desc'), iconClass: 'i-hugeicons:typescript-01 min-w-[32px] min-h-[32px] bg-#3178c6', officialLink: 'https://github.com/microsoft/TypeScript' },
+      { text: 'TypeScript', desc: t('site.Framework.TypeScript.desc'), iconClass: 'i-hugeicons:typescript-01 min-w-[32px] min-h-[32px] bg-#3178c6', officialLink: 'https://github.com/microsoft/TypeScript' },
       // { text: 'Nuxt', desc: 'ffffff', iconClass: 'i-logos:nuxt-icon min-w-[33px] min-h-[33px]' },
       // { text: 'Vue', desc: 'ddddd', iconClass: 'i-devicon:vuejs min-w-[30px] min-h-[30px]' },
-      // { text: 'Typescript', desc: 'ddddd', iconClass: 'i-logos:typescript-icon min-w-[26px] min-h-[26px]' }
+      // { text: 'TypeScript', desc: 'ddddd', iconClass: 'i-logos:typescript-icon min-w-[26px] min-h-[26px]' }
     ]
   },
   {

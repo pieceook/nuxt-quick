@@ -13,16 +13,9 @@ head:
       content: QuickStart - Deploy Blog
 ---
 
-## 一、切换分支
+## 一、下载项目
 
-```bash
-$ cd nuxt-quick # 进入NuxtQuick项目根目录
-$ git checkout blog # 切换至 blog 分支
-```
-
-## 二、部署
-
-### 1. 下载项目 {#download-project}
+### 1. Fork/Clone项目
 
 - 方式1: 推荐此方式，方便后续各种部署
 
@@ -36,17 +29,25 @@ $ git checkout blog # 切换至 blog 分支
 - 方式2:
 
 ```bash
-# 直接下载项目
+# 1. 直接下载项目
 $ git clone https://github.com/pieceook/nuxt-quick
-
-# 再关联自己的远程GitHub仓库
+# 2. 再关联自己的远程GitHub仓库
 ```
 
-### 2. Cloudflare Pages部署流程（SSR） {#cloudflare-pages-deploy}
+### 2. 切换分支
+
+```bash
+$ cd nuxt-quick # 进入NuxtQuick项目根目录
+$ git checkout blog # 切换至 blog 分支
+```
+
+## 二、部署
+
+### Cloudflare Pages部署流程（SSR） {#cloudflare-pages-deploy}
 
 #### 1. 打开CF Workers & Pages 页
 
-      <!-- ::cust-img{imgSrc="/images/content/quick-start-deploy-blog/0x01.png" style="width: 100%;"} -->
+<!-- ::cust-img{imgSrc="/images/content/quick-start-deploy-blog/0x01.png" style="width: 100%;"} -->
 
 ::cust-img-preview{imgSrc="/images/content/quick-start-deploy-blog/0x01.png"}
 ::
@@ -66,7 +67,7 @@ $ git clone https://github.com/pieceook/nuxt-quick
   ::cust-img-preview{imgSrc="/images/content/quick-start-deploy-blog/0x03.png"}
   ::
 
-#### 4. 等待编译上传
+#### 4. 编译上传完成
 
 ::cust-img-preview{imgSrc="/images/content/quick-start-deploy-blog/0x04.png"}
 ::

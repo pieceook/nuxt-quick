@@ -56,7 +56,7 @@
       "Nuxt": {
         "desc": "Vue-based SSR framework"
       },
-      "Typescript": {
+      "TypeScript": {
         "desc": "A statically typed, weakly typed language, a superset of JavaScript"
       },
       "Vue": {
