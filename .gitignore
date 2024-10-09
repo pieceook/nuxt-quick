@@ -1,0 +1,33 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+dist
+
+# Cache
+.cache
+.stylelintcache
+.eslintcache
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+# .env.*
+# !.env.example
+# .env.production
+.delete
+
+# Git
+.gitconfig

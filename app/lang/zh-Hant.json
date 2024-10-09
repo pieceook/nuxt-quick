@@ -1,0 +1,137 @@
+{
+  "site": {
+    "About": "關於",
+    "Blog": "博客",
+    "Dark": "深色",
+    "Deploy": {
+      "CloudflarePages": {
+        "desc": "可使用Worker、Pages部署（支持SSR、SSG）"
+      },
+      "GitHub": {
+        "Pages": {
+          "desc": "使用GitHub Pages的靜態部署（SSG）"
+        },
+        "Release": {
+          "desc": "使用release action自動化管理專案版本"
+        }
+      },
+      "SelfHosting": {
+        "desc": "可透過PM2等進程管理工具部署",
+        "text": "自主部署"
+      },
+      "text": "部署"
+    },
+    "Dev": {
+      "Node": {
+        "desc": "跨平台的JavaScript 執行環境"
+      },
+      "NVM": {
+        "desc": "一個Node.js的版本管理工具"
+      },
+      "Vscode": {
+        "desc": "跨平台的、高效能的、輕量級的程式碼編輯器"
+      },
+      "text": "開發環境"
+    },
+    "Format": {
+      "Commitizen": {
+        "desc": "用於規範化Git Commit 記錄的工具"
+      },
+      "Eslint": {
+        "desc": "JavaScript代碼檢查工具，讓代碼風格更加一致並避免錯誤"
+      },
+      "Husky": {
+        "desc": "Git Hook工具，用來執行各種任務，例如代碼格式化、代碼品質檢查..."
+      },
+      "Save": {
+        "desc": "借助Vscode插件實現保存並自動格式化代碼",
+        "text": "Save & Auto Format"
+      },
+      "Stylelint": {
+        "desc": "CSS代碼檢查工具，避免CSS代碼中的錯誤並保持一致的代碼風格"
+      },
+      "text": "程式碼規範"
+    },
+    "Framework": {
+      "Nuxt": {
+        "desc": "基於Vue的SSR框架"
+      },
+      "Typescript": {
+        "desc": "一種靜態型別、弱型別語言，JavaScript的超集"
+      },
+      "Vue": {
+        "desc": "用於建立使用者介面的漸進式框架"
+      },
+      "text": "基本框架"
+    },
+    "Home": "首页",
+    "Light": "浅色",
+    "Module": {
+      "Analytics": {
+        "gtag": {
+          "desc": "使用谷歌統計數據以衡量網站流量和互動情況",
+          "text": "谷歌統計"
+        }
+      },
+      "Article": {
+        "desc": "對Markdown、自定义组件等友好支持",
+        "text": "文章"
+      },
+      "MultiLang": {
+        "desc": "支持多語言切換，快速翻譯",
+        "text": "多語言"
+      },
+      "Pinia": {
+        "desc": "跨元件和頁面共享狀態"
+      },
+      "Theme": {
+        "desc": "深色和淺色主題模式自由切換",
+        "text": "主題"
+      },
+      "text": "功能模組"
+    },
+    "NoData": "無數據",
+    "QuickStart": {
+      "Blog": {
+        "desc": "基於NuxtQuick快速部署一個自己的博客",
+        "text": "部署博客"
+      },
+      "Deploy": {
+        "desc": "根據業務場景選擇不同的部署方式",
+        "text": "部署項目"
+      },
+      "Run": {
+        "desc": "跟著這些步驟，快速啟動項目",
+        "text": "啟動項目"
+      },
+      "text": "快速開始"
+    },
+    "Roadmap": {
+      "text": "待辦規劃"
+    },
+    "System": "系統",
+    "TableOfContents": "目錄",
+    "Title": "標題",
+    "UIDesign": {
+      "ElementPlus": {
+        "desc": "一個優秀的UI组件庫"
+      },
+      "ResponsiveLayout": {
+        "desc": "使用彈式佈局和媒體查詢來實現響應式佈局",
+        "text": "響應式佈局"
+      },
+      "StickyFooter": {
+        "desc": "使頁尾固定在視窗底部",
+        "text": "黏性頁腳"
+      },
+      "UnoCSS": {
+        "desc": "高性能且極其靈活的動態化 CSS 引擎",
+        "preset-icons": {
+          "desc": "由 Iconify 提供支持的純 CSS 圖示解決方案"
+        }
+      },
+      "text": "UI設計"
+    },
+    "needTranslate": "{x} 翻譯缺失"
+  }
+}

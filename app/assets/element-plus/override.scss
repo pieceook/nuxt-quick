@@ -1,0 +1,35 @@
+$-colors: (
+  'primary': (
+    'base': #303133 // --el-color-primary
+  )
+);
+
+// $text-color: (
+//   'regular': red // --el-text-color-regular
+// );
+
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: $-colors,
+  // $text-color: $text-color
+);
+
+.el-avatar {
+  background: transparent;
+  cursor: pointer;
+}
+
+.el-dropdown-menu__item {
+  padding: 8px 18px !important;
+}
+
+.el-link__inner {
+  p {
+    margin: 0;
+  }
+}
+
+.active-class {
+  // color: var(--color-000-ffaf1a);
+  color: var(--color-000-fff);
+  font-weight: 500;
+}

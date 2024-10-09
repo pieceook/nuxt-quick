@@ -1,1 +1,3 @@
-# nuxt-quick
+## Nuxt Quick
+
+Comming soon!

@@ -1,0 +1,40 @@
+@import 'element-plus/theme-chalk/dark/css-vars.css';
+
+:root {
+  --color-fff-222: #ffffff;
+  --color-000-ffaf1a: #000000;
+  --color-000-fff: #000000;
+  --site-logo-text-bg: url('#{$CDN_URL}/images/icon-site-logo-text.light.svg');
+}
+
+:root[class='dark'] {
+  color-scheme: dark;
+
+  --site-logo-text-bg: url('#{$CDN_URL}/images/icon-site-logo-text.dark.svg');
+  --color-fff-222: #222222;
+  --color-000-ffaf1a: #ffaf1a;
+  --color-000-fff: #ffffff;
+
+  // --el-text-color-regular: #4b5563;
+  // --el-text-color-regular: #cfd3dc;
+  --el-text-color-regular: #b2b6c0;
+
+  // --el-fill-color-blank: transparent;
+  --el-fill-color-blank: #2d3137;
+
+  // --el-color-primary: #409eff;
+  // --el-color-primary: #ffaf1a;
+  --el-color-primary: #ffffff;
+
+  // --el-color-primary-light-9: #2b1d1d;
+  --el-color-primary-light-9: #00000066;
+
+  .el-button {
+    border-color: var(--el-button-bg-color);
+
+    &:hover {
+      color: #ffffff;
+      background: var(--el-button-bg-color);
+    }
+  }
+}

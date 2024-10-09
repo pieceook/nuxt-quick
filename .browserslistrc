@@ -1,0 +1,9 @@
+# npx browserslist
+
+> 1%
+last 2 versions
+not ie <= 8
+not dead
+ios >= 8
+android >= 4.2
+chrome >= 29

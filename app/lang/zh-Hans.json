@@ -1,0 +1,137 @@
+{
+  "site": {
+    "About": "关于",
+    "Blog": "博客",
+    "Dark": "深色",
+    "Format": {
+      "text": "代码规范",
+      "Commitizen": {
+        "desc": "用于规范化Git Commit记录的工具"
+      },
+      "Eslint": {
+        "desc": "JavaScript代码检查工具，使代码风格更加一致并避免错误"
+      },
+      "Husky": {
+        "desc": "Git Hook工具，用来执行各种任务，比如代码格式化、代码质量检查..."
+      },
+      "Save": {
+        "desc": "借助Vscode插件实现保存并自动格式化代码",
+        "text": "Save & Auto Format"
+      },
+      "Stylelint": {
+        "desc": "CSS代码检查工具，规避CSS代码中的错误并保持一致的编码风格"
+      }
+    },
+    "Framework": {
+      "text": "基本框架",
+      "Nuxt": {
+        "desc": "基于Vue的SSR框架"
+      },
+      "Typescript": {
+        "desc": "一种静态类型、弱类型语言，JavaScript的超集"
+      },
+      "Vue": {
+        "desc": "用于构建用户界面的渐进式框架"
+      }
+    },
+    "Home": "首页",
+    "Light": "浅色",
+    "Module": {
+      "text": "功能模块",
+      "Analytics": {
+        "gtag": {
+          "desc": "使用谷歌统计数据以衡量网站流量和互动情况",
+          "text": "谷歌统计"
+        }
+      },
+      "Article": {
+        "desc": "对Markdown、自定义组件等友好支持",
+        "text": "文章"
+      },
+      "MultiLang": {
+        "desc": "支持多语言切换、便捷的快速翻译",
+        "text": "多語言"
+      },
+      "Pinia": {
+        "desc": "状态管理库，跨组件和页面共享数据状态"
+      },
+      "Theme": {
+        "desc": "深色和浅色主题模式自由切换",
+        "text": "主題"
+      }
+    },
+    "NoData": "无数据",
+    "System": "系统",
+    "TableOfContents": "目录",
+    "Title": "标题",
+    "UIDesign": {
+      "text": "UI设计",
+      "ElementPlus": {
+        "desc": "一个优秀的UI组件库"
+      },
+      "ResponsiveLayout": {
+        "desc": "使用弹式布局和媒体查询来实现响应式布局",
+        "text": "响应式布局"
+      },
+      "StickyFooter": {
+        "desc": "使页尾固定在视窗底部",
+        "text": "黏性页脚"
+      },
+      "UnoCSS": {
+        "desc": "高性能且极其灵活的动态化 CSS 引擎",
+        "preset-icons": {
+          "desc": "由 Iconify 提供支持的纯 CSS 图标解决方案"
+        }
+      }
+    },
+    "Dev": {
+      "text": "开发环境",
+      "Vscode": {
+        "desc": "跨平台的、高性能的、轻量级的代码编辑器"
+      },
+      "NVM": {
+        "desc": "一个Node.js的版本管理工具"
+      },
+      "Node": {
+        "desc": "跨平台的JavaScript 运行时环境"
+      }
+    },
+    "Deploy": {
+      "text": "部署",
+      "SelfHosting": {
+        "text": "自主部署",
+        "desc": "可通过PM2等进程管理工具部署"
+      },
+      "CloudflarePages": {
+        "desc": "可使用Worker、Pages部署（支持SSR、SSG）"
+      },
+      "GitHub": {
+        "Pages": {
+          "desc": "使用GitHub Pages的静态部署（SSG）"
+        },
+        "Release": {
+          "desc": "使用release action自动化管理项目版本"
+        }
+      }
+    },
+    "Roadmap": {
+      "text": "待办规划"
+    },
+    "QuickStart": {
+      "text": "快速开始",
+      "Run": {
+        "text": "启动项目",
+        "desc": "跟着这些步骤，快速启动项目"
+      },
+      "Deploy": {
+        "text": "部署项目",
+        "desc": "根据业务场景选择不同的部署方式"
+      },
+      "Blog": {
+        "text": "部署博客",
+        "desc": "基于NuxtQuick快速部署一个自己的博客"
+      }
+    },
+    "needTranslate": "{x} 翻译缺失"
+  }
+}
