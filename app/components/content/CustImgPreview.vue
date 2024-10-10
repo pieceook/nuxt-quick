@@ -5,7 +5,7 @@ defineProps(['imgSrc'])
 <template>
   <div class="demo-image__preview">
     <ElImage
-      class="lt-sm:w-100vw sm:w-80%"
+      class="sm:w-80%"
       :src="imgSrc"
       :zoom-rate="1.2"
       :max-scale="7"

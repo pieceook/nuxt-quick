@@ -10,5 +10,9 @@
     "TableOfContents": "目錄",
     "Title": "標題",
     "needTranslate": "{x} 翻譯缺失"
+  },
+  "tdk": {
+    "Description": "一個不斷探索最佳實踐的 Nuxt 集成開發方案",
+    "Title": "NuxtQuick"
   }
 }

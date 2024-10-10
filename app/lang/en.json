@@ -10,5 +10,9 @@
     "TableOfContents": "Table of contents",
     "Title": "Title",
     "needTranslate": "{x} translation missing"
+  },
+  "tdk": {
+    "Description": "A best practice to continuously explore Nuxt integrated development solutions",
+    "Title": "NuxtQuick"
   }
 }

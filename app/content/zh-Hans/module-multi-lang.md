@@ -7,8 +7,6 @@ tags:
   - Module
 head:
   meta:
-    - name: keywords
-      content: NuxtQuick,Multi Lang
     - name: description
       content: Module - multi lang
 ---

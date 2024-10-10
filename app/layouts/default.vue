@@ -1,18 +1,23 @@
 <script setup lang="ts">
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
-const updateFn = (title: string | undefined) => {
-  return title || 'Pieceook'
+const updateSeoFn = () => {
+  const desc = `${t('tdk.Title')} - ${t('tdk.Description')}`
+  useSeoMeta({
+    robots: 'index, follow',
+    titleTemplate: (title: string | undefined) => {
+      return title || 'NuxtQuick'
+    },
+    description: desc,
+    ogDescription: desc,
+    twitterDescription: desc
+  })
 }
 
-useHead({
-  titleTemplate: updateFn
-})
+updateSeoFn()
 
 watch(locale, () => {
-  useHead({
-    titleTemplate: updateFn
-  })
+  updateSeoFn()
 })
 </script>
 

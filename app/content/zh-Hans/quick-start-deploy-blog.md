@@ -7,8 +7,6 @@ tags:
   - QuickStart
 head:
   meta:
-    - name: keywords
-      content: NuxtQuick,QuickStart,Deploy Blog
     - name: description
       content: QuickStart - Deploy Blog
 ---
