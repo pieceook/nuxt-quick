@@ -7,8 +7,6 @@ tags:
   - UI Design
 head:
   meta:
-    - name: keywords
-      content: NuxtQuick,Responsive Layout
     - name: description
       content: UI Design - responsive layout
 ---

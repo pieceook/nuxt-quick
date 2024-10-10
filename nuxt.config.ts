@@ -2,11 +2,11 @@ import { resolve } from 'node:path'
 import process from 'node:process'
 import ElementPlus from 'unplugin-element-plus/vite'
 
-const { GTAG_ID, NODE_ENV = '' } = process.env
+const { GTAG_ID, ADSENSE_ID, NODE_ENV = '' } = process.env
 const ssr: boolean = process.env.ssr !== 'false'
 const isDev = ['development', 'local'].includes(NODE_ENV)
 const isProd = ['production'].includes(NODE_ENV)
-console.warn('##CONF##\n', JSON.stringify({ ssr, NODE_ENV, GTAG_ID }, null, 2))
+console.warn('##CONF##\n', JSON.stringify({ ssr, NODE_ENV, GTAG_ID, ADSENSE_ID }, null, 2))
 
 export default defineNuxtConfig({
   ssr,
@@ -16,8 +16,8 @@ export default defineNuxtConfig({
       link: [
         { rel: 'prefetch', as: 'image', href: '/images/icon-site-logo-text.light.svg' },
         { rel: 'prefetch', as: 'image', href: '/images/icon-site-logo-text.dark.svg' },
-      ]
-
+      ],
+      viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'
     }
   },
   future: {
@@ -68,12 +68,16 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@element-plus/nuxt',
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/google-adsense',
     '@pinia/nuxt',
     '@nuxt/content',
     '@nuxtjs/i18n',
     '@vueuse/nuxt',
     'nuxt-gtag'
   ],
+  googleAdsense: {
+    id: ADSENSE_ID
+  },
   gtag: {
     id: GTAG_ID,
     config: {

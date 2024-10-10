@@ -7,8 +7,6 @@ tags:
   - QuickStart
 head:
   meta:
-    - name: keywords
-      content: NuxtQuick,QuickStart,Deploy Project
     - name: description
       content: QuickStart - Deploy project
 ---

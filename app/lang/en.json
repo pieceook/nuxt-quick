@@ -1,8 +1,5 @@
 {
-  "site": {
-    "About": "About",
-    "Blog": "Blog",
-    "Dark": "Dark",
+  "guide": {
     "Deploy": {
       "CloudflarePages": {
         "desc": "Can be deployed using Workers and Pages (supports SSR and SSG)"
@@ -22,11 +19,11 @@
       "text": "Deploy"
     },
     "Dev": {
-      "Node": {
-        "desc": "Cross-platform JavaScript runtime environment"
-      },
       "NVM": {
         "desc": "A version management tool for Node.js"
+      },
+      "Node": {
+        "desc": "Cross-platform JavaScript runtime environment"
       },
       "Vscode": {
         "desc": "Cross-platform, high-performance, lightweight code editor"
@@ -64,13 +61,14 @@
       },
       "text": "Base framework"
     },
-    "Home": "Home",
-    "Light": "Light",
     "Module": {
+      "Adsense": {
+        "desc": "An advertising program launched by Google"
+      },
       "Analytics": {
         "gtag": {
-          "desc": "Use Google Statistics to measure website traffic and interaction",
-          "text": "Google Statistics"
+          "desc": "Use Google Analytics to measure website traffic and interaction",
+          "text": "Google Analytics"
         }
       },
       "Article": {
@@ -88,9 +86,11 @@
         "desc": "Freely switch between dark and light theme modes",
         "text": "Theme"
       },
+      "VueUse": {
+        "desc": "Collection of essential Vue Composition Utilities for Vue"
+      },
       "text": "Module"
     },
-    "NoData": "No data",
     "QuickStart": {
       "Blog": {
         "desc": "Quickly deploy your own blog based on NuxtQuick",
@@ -109,9 +109,6 @@
     "Roadmap": {
       "text": "Roadmap"
     },
-    "System": "System",
-    "TableOfContents": "Table of contents",
-    "Title": "Title",
     "UIDesign": {
       "ElementPlus": {
         "desc": "An excellent UI component library"
@@ -131,7 +128,22 @@
         }
       },
       "text": "UI Design"
-    },
+    }
+  },
+  "site": {
+    "About": "About",
+    "Blog": "Blog",
+    "Dark": "Dark",
+    "Home": "Home",
+    "Light": "Light",
+    "NoData": "No data",
+    "System": "System",
+    "TableOfContents": "Table of contents",
+    "Title": "Title",
     "needTranslate": "{x} translation missing"
+  },
+  "tdk": {
+    "Description": "A best practice to continuously explore Nuxt integrated development solutions",
+    "Title": "NuxtQuick"
   }
 }

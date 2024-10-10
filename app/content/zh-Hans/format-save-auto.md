@@ -7,8 +7,6 @@ tags:
   - Format
 head:
   meta:
-    - name: keywords
-      content: NuxtQuick,save & auto
     - name: description
       content: Format - save & auto
 ---

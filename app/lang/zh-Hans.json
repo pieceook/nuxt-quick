@@ -1,10 +1,36 @@
 {
-  "site": {
-    "About": "关于",
-    "Blog": "博客",
-    "Dark": "深色",
+  "guide": {
+    "Deploy": {
+      "CloudflarePages": {
+        "desc": "可使用Worker、Pages部署（支持SSR、SSG）"
+      },
+      "GitHub": {
+        "Pages": {
+          "desc": "使用GitHub Pages的静态部署（SSG）"
+        },
+        "Release": {
+          "desc": "使用release action自动化管理项目版本"
+        }
+      },
+      "SelfHosting": {
+        "desc": "可通过PM2等进程管理工具部署",
+        "text": "自主部署"
+      },
+      "text": "部署"
+    },
+    "Dev": {
+      "NVM": {
+        "desc": "一个Node.js的版本管理工具"
+      },
+      "Node": {
+        "desc": "跨平台的JavaScript 运行时环境"
+      },
+      "Vscode": {
+        "desc": "跨平台的、高性能的、轻量级的代码编辑器"
+      },
+      "text": "开发环境"
+    },
     "Format": {
-      "text": "代码规范",
       "Commitizen": {
         "desc": "用于规范化Git Commit记录的工具"
       },
@@ -20,10 +46,10 @@
       },
       "Stylelint": {
         "desc": "CSS代码检查工具，规避CSS代码中的错误并保持一致的编码风格"
-      }
+      },
+      "text": "代码规范"
     },
     "Framework": {
-      "text": "基本框架",
       "Nuxt": {
         "desc": "基于Vue的SSR框架"
       },
@@ -32,12 +58,13 @@
       },
       "Vue": {
         "desc": "用于构建用户界面的渐进式框架"
-      }
+      },
+      "text": "基本框架"
     },
-    "Home": "首页",
-    "Light": "浅色",
     "Module": {
-      "text": "功能模块",
+      "Adsense": {
+        "desc": "一个由Google推出的广告计划"
+      },
       "Analytics": {
         "gtag": {
           "desc": "使用谷歌统计数据以衡量网站流量和互动情况",
@@ -58,14 +85,31 @@
       "Theme": {
         "desc": "深色和浅色主题模式自由切换",
         "text": "主題"
-      }
+      },
+      "VueUse": {
+        "desc": "一款基于Vue组合式API的函数工具集"
+      },
+      "text": "功能模块"
     },
-    "NoData": "无数据",
-    "System": "系统",
-    "TableOfContents": "目录",
-    "Title": "标题",
+    "QuickStart": {
+      "Blog": {
+        "desc": "基于NuxtQuick快速部署一个自己的博客",
+        "text": "部署博客"
+      },
+      "Deploy": {
+        "desc": "根据业务场景选择不同的部署方式",
+        "text": "部署项目"
+      },
+      "Run": {
+        "desc": "跟着这些步骤，快速启动项目",
+        "text": "启动项目"
+      },
+      "text": "快速开始"
+    },
+    "Roadmap": {
+      "text": "待办规划"
+    },
     "UIDesign": {
-      "text": "UI设计",
       "ElementPlus": {
         "desc": "一个优秀的UI组件库"
       },
@@ -82,56 +126,24 @@
         "preset-icons": {
           "desc": "由 Iconify 提供支持的纯 CSS 图标解决方案"
         }
-      }
-    },
-    "Dev": {
-      "text": "开发环境",
-      "Vscode": {
-        "desc": "跨平台的、高性能的、轻量级的代码编辑器"
       },
-      "NVM": {
-        "desc": "一个Node.js的版本管理工具"
-      },
-      "Node": {
-        "desc": "跨平台的JavaScript 运行时环境"
-      }
-    },
-    "Deploy": {
-      "text": "部署",
-      "SelfHosting": {
-        "text": "自主部署",
-        "desc": "可通过PM2等进程管理工具部署"
-      },
-      "CloudflarePages": {
-        "desc": "可使用Worker、Pages部署（支持SSR、SSG）"
-      },
-      "GitHub": {
-        "Pages": {
-          "desc": "使用GitHub Pages的静态部署（SSG）"
-        },
-        "Release": {
-          "desc": "使用release action自动化管理项目版本"
-        }
-      }
-    },
-    "Roadmap": {
-      "text": "待办规划"
-    },
-    "QuickStart": {
-      "text": "快速开始",
-      "Run": {
-        "text": "启动项目",
-        "desc": "跟着这些步骤，快速启动项目"
-      },
-      "Deploy": {
-        "text": "部署项目",
-        "desc": "根据业务场景选择不同的部署方式"
-      },
-      "Blog": {
-        "text": "部署博客",
-        "desc": "基于NuxtQuick快速部署一个自己的博客"
-      }
-    },
+      "text": "UI设计"
+    }
+  },
+  "site": {
+    "About": "关于",
+    "Blog": "博客",
+    "Dark": "深色",
+    "Home": "首页",
+    "Light": "浅色",
+    "NoData": "无数据",
+    "System": "系统",
+    "TableOfContents": "目录",
+    "Title": "标题",
     "needTranslate": "{x} 翻译缺失"
+  },
+  "tdk": {
+    "Description": "一个在不断探索最佳实践的 Nuxt 集成开发方案",
+    "Title": "NuxtQuick"
   }
 }

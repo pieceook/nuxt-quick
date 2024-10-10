@@ -7,8 +7,6 @@ tags:
   - Module
 head:
   meta:
-    - name: keywords
-      content: NuxtQuick,Article
     - name: description
       content: Module - article
 ---

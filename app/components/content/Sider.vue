@@ -19,7 +19,7 @@ useScroller('.guide-comp')
     }
 
     .items-wrap {
-      @apply grid-cols-none m-auto flex flex-col gap-10px;
+      @apply grid-cols-none m-auto flex flex-col gap-8px;
 
       .el-button {
         @apply min-h-50px;

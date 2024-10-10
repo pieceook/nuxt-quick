@@ -1,8 +1,5 @@
 {
-  "site": {
-    "About": "關於",
-    "Blog": "博客",
-    "Dark": "深色",
+  "guide": {
     "Deploy": {
       "CloudflarePages": {
         "desc": "可使用Worker、Pages部署（支持SSR、SSG）"
@@ -22,11 +19,11 @@
       "text": "部署"
     },
     "Dev": {
-      "Node": {
-        "desc": "跨平台的JavaScript 執行環境"
-      },
       "NVM": {
         "desc": "一個Node.js的版本管理工具"
+      },
+      "Node": {
+        "desc": "跨平台的JavaScript 執行環境"
       },
       "Vscode": {
         "desc": "跨平台的、高效能的、輕量級的程式碼編輯器"
@@ -64,9 +61,10 @@
       },
       "text": "基本框架"
     },
-    "Home": "首页",
-    "Light": "浅色",
     "Module": {
+      "Adsense": {
+        "desc": "一个由谷歌推出的廣告計劃"
+      },
       "Analytics": {
         "gtag": {
           "desc": "使用谷歌統計數據以衡量網站流量和互動情況",
@@ -88,9 +86,11 @@
         "desc": "深色和淺色主題模式自由切換",
         "text": "主題"
       },
-      "text": "功能模組"
+      "VueUse": {
+        "desc": "一款基于Vue组合式API的函数工具集 "
+      },
+      "text": "功能模块"
     },
-    "NoData": "無數據",
     "QuickStart": {
       "Blog": {
         "desc": "基於NuxtQuick快速部署一個自己的博客",
@@ -109,9 +109,6 @@
     "Roadmap": {
       "text": "待辦規劃"
     },
-    "System": "系統",
-    "TableOfContents": "目錄",
-    "Title": "標題",
     "UIDesign": {
       "ElementPlus": {
         "desc": "一個優秀的UI组件庫"
@@ -131,7 +128,22 @@
         }
       },
       "text": "UI設計"
-    },
+    }
+  },
+  "site": {
+    "About": "關於",
+    "Blog": "博客",
+    "Dark": "深色",
+    "Home": "首页",
+    "Light": "浅色",
+    "NoData": "無數據",
+    "System": "系統",
+    "TableOfContents": "目錄",
+    "Title": "標題",
     "needTranslate": "{x} 翻譯缺失"
+  },
+  "tdk": {
+    "Description": "一個不斷探索最佳實踐的 Nuxt 集成開發方案",
+    "Title": "NuxtQuick"
   }
 }

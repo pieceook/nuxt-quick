@@ -22,8 +22,8 @@ const menuArr = [
       </div>
       <div class="overflow-hidden text-ellipsis px-2" />
       <div class="flex flex-row items-center">
-        <ComColorMode class="mr-[10px]" />
-        <ComLocale class="lt-sm:mr-[10px]" />
+        <ComColorMode class="mr-[10px] lt-sm:mr-[14px]" />
+        <ComLocale class="lt-sm:mr-[14px]" />
         <el-link :href="GITHUB_URL" target="_blank" class="i-iconoir:github ml-10px h-[24px] w-[24px] lt-sm:!hidden" />
         <div class="i-line-md:menu-fold-left h-[28px] w-[28px] transition-transform duration-400ms sm:hidden text-style" :class="{ 'transform-rotate-180': !siteStore.isSiderCollapsed }" @click="siteStore.toggleSiderCollapse()" />
       </div>

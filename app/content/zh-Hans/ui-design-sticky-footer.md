@@ -7,8 +7,6 @@ tags:
   - UI Design
 head:
   meta:
-    - name: keywords
-      content: NuxtQuick,Sticky Footer
     - name: description
       content: UI Design - sticky footer
 ---
