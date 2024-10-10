@@ -10,7 +10,9 @@ const handleYandexMetrika = (yandexId) => {
   ym(yandexId, "init", {
     clickmap:true,
     trackLinks:true,
-    accurateTrackBounce:true
+    accurateTrackBounce:true,
+    webvisor:true,
+    ecommerce:"dataLayer"
   });
 }
 /* eslint-enable */
