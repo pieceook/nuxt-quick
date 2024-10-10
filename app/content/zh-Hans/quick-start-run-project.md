@@ -19,22 +19,13 @@ head:
 
 #### Vscode插件
 
+PS：详见项目下的 .vscode/extensions.json
+
 - [安装 Vue Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar){target=\_blank}
 - [安装 ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint){target=\_blank}
 - [安装 Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint){target=\_blank}
 - [安装 i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally){target=\_blank}
-- 详见项目下的 .vscode/extensions.json
-
-```json
-{
-  "recommendations": [
-    "vue.volar",
-    "dbaeumer.vscode-eslint",
-    "stylelint.vscode-stylelint",
-    "lokalise.i18n-ally"
-  ]
-}
-```
+- [安装 Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode){target=\_blank}
 
 ## 二、安装 NVM & Node.js {#install-nvm-node}
 

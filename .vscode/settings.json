@@ -21,10 +21,15 @@
     "vue",
     "html",
     "markdown",
+    "md",
     "json",
     "jsonc",
     "yaml"
   ],
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
   // Support multi-language text translation
   "i18n-ally.localesPaths": "app/lang",
   "i18n-ally.displayLanguage": "en",

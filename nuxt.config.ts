@@ -2,11 +2,11 @@ import { resolve } from 'node:path'
 import process from 'node:process'
 import ElementPlus from 'unplugin-element-plus/vite'
 
-const { GTAG_ID, ADSENSE_ID, NODE_ENV = '' } = process.env
+const { GOOGLE_GTAG_ID, GOOGLE_ADSENSE_ID, YANDEX_METRIKA_ID, NODE_ENV = '' } = process.env
 const ssr: boolean = process.env.ssr !== 'false'
 const isDev = ['development', 'local'].includes(NODE_ENV)
 const isProd = ['production'].includes(NODE_ENV)
-console.warn('##CONF##\n', JSON.stringify({ ssr, NODE_ENV, GTAG_ID, ADSENSE_ID }, null, 2))
+console.warn('##CONF##\n', JSON.stringify({ ssr, NODE_ENV, GOOGLE_GTAG_ID, GOOGLE_ADSENSE_ID, YANDEX_METRIKA_ID }, null, 2))
 
 export default defineNuxtConfig({
   ssr,
@@ -25,9 +25,9 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-07-03',
   runtimeConfig: {
-    PRV_TEST_KEY: 'test-key-server',
+    PRV_TEST_KEY: 'todo-key-server',
     public: {
-      PLC_TEST_KEY: 'test-key-client',
+      YANDEX_METRIKA_ID
     }
   },
   build: {
@@ -76,10 +76,10 @@ export default defineNuxtConfig({
     'nuxt-gtag'
   ],
   googleAdsense: {
-    id: ADSENSE_ID
+    id: GOOGLE_ADSENSE_ID
   },
   gtag: {
-    id: GTAG_ID,
+    id: GOOGLE_GTAG_ID,
     config: {
       send_page_view: true
     }

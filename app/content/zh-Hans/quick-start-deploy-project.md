@@ -15,7 +15,7 @@ head:
 
 #### 1. 编译项目
 
-- 1.1 配置 ./.env.production 文件，例如 GTAG_ID
+- 1.1 配置 ./.env.production 文件，例如 GOOGLE_GTAG_ID
 - 1.2 打包项目
 
 ```bash
@@ -172,12 +172,12 @@ jobs:
         run: npx changelogithub
         continue-on-error: true
         env:
-          GITHUB_TOKEN: ${{secrets.RELEASE_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.NUXT_QUICK_RELEASE_TOKEN}}
 
       - name: ->googleapis/release-please-action@v4
         uses: googleapis/release-please-action@v4
         with:
-          token: ${{ secrets.RELEASE_TOKEN }}
+          token: ${{ secrets.NUXT_QUICK_RELEASE_TOKEN }}
           release-type: node
       # - run: npm ci
       #   if: ${{ steps.release.outputs.release_created }}
