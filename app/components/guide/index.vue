@@ -43,7 +43,7 @@ const subArr: SubArrInter[] = [
       { text: 'Pinia', desc: t('guide.Module.Pinia.desc'), iconClass: 'i-logos:pinia min-w-[34px] min-h-[34px]', officialLink: 'https://github.com/vuejs/pinia' },
       { text: 'VueUse', desc: t('guide.Module.VueUse.desc'), iconClass: 'i-logos:vueuse min-w-[24px] min-h-[24px]', officialLink: 'https://github.com/vueuse/vueuse' },
       { text: t('guide.Module.Analytics.gtag.text'), desc: t('guide.Module.Analytics.gtag.desc'), iconClass: 'i-logos:google-analytics min-w-[26px] min-h-[26px]', officialLink: 'https://github.com/johannschopplich/nuxt-gtag' },
-      { text: 'Google Adsense', desc: t('guide.Module.Adsense.desc'), iconClass: 'i-logos:google-adsense min-w-[28px] min-h-[28px]', officialLink: 'https://adsense.google.com/start/' },
+      { text: 'Google Adsense', desc: t('guide.Module.Adsense.desc'), iconClass: 'i-logos:google-adsense min-w-[28px] min-h-[28px]', officialLink: 'https://github.com/nuxt-modules/google-adsense' },
     ]
   },
   {
