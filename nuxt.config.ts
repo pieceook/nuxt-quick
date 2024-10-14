@@ -76,6 +76,7 @@ export default defineNuxtConfig({
     'nuxt-gtag'
   ],
   googleAdsense: {
+    onPageLoad: true,
     id: GOOGLE_ADSENSE_ID
   },
   gtag: {
