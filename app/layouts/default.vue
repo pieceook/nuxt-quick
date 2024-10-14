@@ -1,6 +1,17 @@
 <script setup lang="ts">
 const { locale, t } = useI18n()
 
+const i18nHead = useLocaleHead({
+  addSeoAttributes: true
+})
+
+// PS: no watch, avoid [Vue warn]: onUnmounted is called when there is no active component instance to be associated with
+useHead({
+  htmlAttrs: {
+    lang: i18nHead.value.htmlAttrs!.lang
+  }
+})
+
 const updateSeoFn = () => {
   const desc = `${t('tdk.Title')} - ${t('tdk.Description')}`
   useSeoMeta({
@@ -10,7 +21,7 @@ const updateSeoFn = () => {
     },
     description: desc,
     ogDescription: desc,
-    twitterDescription: desc
+    twitterDescription: desc,
   })
 }
 

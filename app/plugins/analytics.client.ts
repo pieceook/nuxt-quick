@@ -27,8 +27,3 @@ export default defineNuxtPlugin({
     }
   }
 })
-
-// export default defineNuxtPlugin((nuxtApp) => {
-//   nuxtApp.hook('app:mounted', () => {
-//   })
-// })

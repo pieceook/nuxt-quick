@@ -36,7 +36,9 @@
 
   .text2 {
     margin-left: 6px;
-    color: #ffaf1a;
+
+    // For: Background and foreground colors do not have a sufficient contrast ratio.
+    // color: #ffaf1a;
   }
 }
 

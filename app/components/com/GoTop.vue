@@ -12,7 +12,8 @@ const { y: scrollY } = useWindowScroll()
 <template>
   <button
     data-allow-mismatch
-    class="fixed bottom-3 right-3 z-100 h-[42px] w-[42px] flex items-center justify-center rounded-full transition duration-300 print:hidden hover-bg-hex-8883 lt-sm:bg-hex-8883 text-style hover:op100"
+    aria-label="GoTop"
+    class="com-go-top fixed bottom-3 right-3 z-100 h-[42px] w-[42px] flex items-center justify-center rounded-full transition duration-300 print:hidden hover-bg-hex-8883 lt-sm:bg-hex-8883 text-style hover:op100"
     :class="scrollY > 300 ? 'op80' : 'op0! pointer-events-none'"
     @click="goToTop()"
   >

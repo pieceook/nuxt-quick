@@ -17,7 +17,7 @@ export default defineNuxtConfig({
         { rel: 'prefetch', as: 'image', href: '/images/icon-site-logo-text.light.svg' },
         { rel: 'prefetch', as: 'image', href: '/images/icon-site-logo-text.dark.svg' },
       ],
-      viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'
+      viewport: 'width=device-width, initial-scale=1'
     }
   },
   future: {
@@ -189,22 +189,25 @@ export default defineNuxtConfig({
       {
         code: 'en',
         file: 'en',
+        iso: 'en',
         htmlLangAttr: 'en',
         name: 'English'
       },
       {
         code: 'zh-Hans',
         file: 'zh-Hans',
+        iso: 'zh-Hans',
         htmlLangAttr: 'zh',
         name: '简体中文'
       },
       {
         code: 'zh-Hant',
         file: 'zh-Hant',
+        iso: 'zh-Hant',
         htmlLangAttr: 'zh',
         name: '繁體中文'
       }
-    ]
+    ],
   },
   css: ['@unocss/reset/tailwind.css', '@unocss/reset/normalize.css', '@/assets/color-mode.scss', '@/assets/global.scss'],
   devtools: {
