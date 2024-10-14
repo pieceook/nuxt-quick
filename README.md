@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">一个在不断探索最佳实践的 Nuxt 集成开发方案、大型企业Web应用业务模版</p>
-<p align="center">基于 Nuxt、TypeScript、Pinia、UnoCSS、Vite、ElementPlus 等主流技术开发，并集成多语言、主题模式、Markdown等扩展、代码规范检查和代码提交校验等工具。结合配套的开发环境可快速上手，稍做加、减法就可以完成不同场景的业务开发。</p>
+<p align="center">基于 Nuxt、ElementPlus、TypeScript、Pinia、UnoCSS、Vite 等主流技术开发，并集成多语言、主题模式、Markdown等扩展、代码规范检查和代码提交校验等工具。结合配套的开发环境可快速上手，稍做加、减法就可以完成不同场景的业务开发。</p>
 
 <p align="center">
   <a href="https://nuxt-quick.pieceook.com/zh-Hans">在线示例</a>
