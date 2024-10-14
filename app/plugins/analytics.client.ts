@@ -20,8 +20,15 @@ const handleYandexMetrika = (yandexId) => {
 // @ts-check
 export default defineNuxtPlugin({
   name: 'analytics-plugin',
-  setup() {
-    const config = useRuntimeConfig().public
-    handleYandexMetrika(config.YANDEX_METRIKA_ID)
+  hooks: {
+    'app:mounted': () => {
+      const config = useRuntimeConfig().public
+      handleYandexMetrika(config.YANDEX_METRIKA_ID)
+    }
   }
 })
+
+// export default defineNuxtPlugin((nuxtApp) => {
+//   nuxtApp.hook('app:mounted', () => {
+//   })
+// })
