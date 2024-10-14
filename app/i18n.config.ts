@@ -3,5 +3,5 @@ export default defineI18nConfig(() => ({
   sortRoutes: false,
   parsePages: false,
   lazy: true,
-  ssr: true
+  ssr: true,
 }))

@@ -8,7 +8,7 @@ const switchLocalePath = useSwitchLocalePath()
 <template>
   <div class="com-locale">
     <ElDropdown placement="bottom" trigger="click">
-      <el-button class="r-[8px] mr-[0] pl-[15px] pr-[12px] hover-z-2 dark:mr-[0] !b-none !py-[17px] lt-sm:!bg-transparent lt-sm:!px-0">
+      <el-button class="r-[8px] mr-[0] pl-[15px] pr-[12px] hover-z-2 dark:mr-[0] !b-none !py-[17px] lt-sm:!bg-transparent lt-sm:!px-0" aria-label="ColorMode">
         <div class="i-prime:language h-[30px] w-[30px] lt-sm:mr-[-4px]" />
       </el-button>
       <template #dropdown>

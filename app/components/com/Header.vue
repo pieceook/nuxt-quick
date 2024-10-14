@@ -16,7 +16,7 @@ const menuArr = [
   <header class="com-header sticky top-0 z-1 h-[60px] w-full bg-[var(--color-fff-222)] shadow-md lt-sm:h-[50px]">
     <div class="h-full flex justify-between def-media">
       <div class="w-full flex">
-        <NuxtLink :to="localePath('/')" class="flex items-center justify-center">
+        <NuxtLink :to="localePath('/')" class="flex items-center justify-center" aria-label="HomeLink">
           <div class="h-[34px] w-[174px] bg-style-[var(--site-logo-text-bg)] lt-sm:h-[32px] lt-sm:w-[154px]" />
         </NuxtLink>
       </div>
@@ -24,7 +24,7 @@ const menuArr = [
       <div class="flex flex-row items-center">
         <ComColorMode class="mr-[10px] lt-sm:mr-[14px]" />
         <ComLocale class="lt-sm:mr-[14px]" />
-        <el-link :href="GITHUB_URL" target="_blank" class="i-iconoir:github ml-10px h-[24px] w-[24px] lt-sm:!hidden" />
+        <el-link :href="GITHUB_URL" target="_blank" class="i-iconoir:github ml-10px h-[24px] w-[24px] lt-sm:!hidden" aria-label="GitHubLink" />
         <div class="i-line-md:menu-fold-left h-[28px] w-[28px] transition-transform duration-400ms sm:hidden text-style" :class="{ 'transform-rotate-180': !siteStore.isSiderCollapsed }" @click="siteStore.toggleSiderCollapse()" />
       </div>
     </div>

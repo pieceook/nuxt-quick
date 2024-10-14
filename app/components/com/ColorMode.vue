@@ -12,7 +12,7 @@ const getColorModeByKey = (modeKey: string) => colorModeArr.find(i => i.modeKey 
 <template>
   <div class="com-color-mode">
     <ElDropdown placement="bottom" trigger="click">
-      <el-button class="r-[8px] mr-[-20px] pl-[15px] pr-[12px] hover-z-2 dark:mr-[0] lt-sm:mr-[-2px] !b-none !py-[17px] lt-sm:!bg-transparent lt-sm:!px-0">
+      <el-button class="r-[8px] mr-[-20px] pl-[15px] pr-[12px] hover-z-2 dark:mr-[0] lt-sm:mr-[-2px] !b-none !py-[17px] lt-sm:!bg-transparent lt-sm:!px-0" aria-label="ColorMode">
         <ClientOnly>
           <ComImg :icon-class="getColorModeByKey($colorMode.preference)?.iconClass" class="!mr-[6px] lt-sm:!mr-[0]" />
           <template #placeholder>
