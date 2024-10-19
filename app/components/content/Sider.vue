@@ -15,7 +15,7 @@ useScroller('.guide-comp')
 
   :deep(.sub-item) {
     .sub-item-text {
-      @apply rd-t-[6px] pos-sticky top-[0] z-1 m-0 pa-0 bg-[#fafafa] py-5px pl-15px dark:bg-#242424ed font-size-[18px] lh-normal;
+      @apply rd-t-[6px] pos-sticky top-[0] z-1 m-0 pa-0 bg-[#fafafa] py-5px pl-15px dark:bg-#242424f5 font-size-[18px] lh-normal;
     }
 
     .items-wrap {

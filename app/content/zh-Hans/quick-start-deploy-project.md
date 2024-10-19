@@ -15,7 +15,7 @@ head:
 
 #### 1. 编译项目
 
-- 1.1 配置 ./.env.production 文件，例如 GOOGLE_GTAG_ID
+- 1.1 配置 `./app/config/env/.env.production` 文件，例如 `GOOGLE_GTAG_ID` 变量
 - 1.2 打包项目
 
 ```bash

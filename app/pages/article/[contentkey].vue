@@ -18,7 +18,7 @@ let pageData = await getPageData(localeVal)
 const needTranslate = useState(useId(), () => false)
 
 if (!pageData.value) {
-  pageData = await getPageData(DEF_ARTICLE_LOCALE)
+  pageData = await getPageData(DEF_LOCALE_ARTICLE)
   needTranslate.value = true
 }
 

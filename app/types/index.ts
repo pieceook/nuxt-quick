@@ -11,4 +11,10 @@ declare global {
     depth: number
     links: TocLink[]
   }
+  interface Locale {
+    code: string
+    file: string
+    language: string
+    name: string
+  }
 }
