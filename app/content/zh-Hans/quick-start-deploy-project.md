@@ -55,10 +55,17 @@ module.exports = {
   apps: [
     {
       name: "nuxt-quick",
-      port: "3998",
       exec_mode: "cluster",
       instances: "1",
       script: "./.output/server/index.mjs",
+      env: {
+        NODE_ENV: "development",
+        PORT: "13998",
+      },
+      env_production: {
+        NODE_ENV: "production",
+        PORT: "3998",
+      },
     },
   ],
 };
@@ -67,7 +74,7 @@ module.exports = {
 #### 4. 启动项目
 
 ```bash
-$ pm2 start ecosystem.config.cjs
+$ pm2 start ecosystem.config.cjs --env production
 ```
 
 ## 二、Cloudflare Pages {#cloudflare-pages}
