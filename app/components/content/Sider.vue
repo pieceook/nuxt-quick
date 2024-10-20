@@ -10,26 +10,30 @@ useScroller('.guide-comp-child')
 
 <style lang="scss" scoped>
 .guide-comp-child {
+  @apply mt-[15px] max-h-[55vh] overflow-x-hidden overflow-y-scroll;
+
   @include scrollbar-style;
 
-  :deep(.sub-item) {
-    .sub-item-top {
-      @apply rd-t-[6px] pos-sticky top-[0] z-1 m-0 pa-0 bg-[#fafafa] py-5px pl-15px dark:bg-#242424f5 font-size-[18px] lh-normal;
-    }
+  &.guide-comp {
+    :deep(.sub-item) {
+      .sub-item-top {
+        @apply rd-t-[6px] pos-sticky top-[0] z-1 m-0 pa-0 bg-[#fafafa] py-5px pl-15px dark:bg-#242424f5 font-size-[18px] lh-normal;
+      }
 
-    .sub-item-bottom {
-      @apply grid-cols-none m-auto flex flex-col gap-8px;
+      .sub-item-bottom {
+        @apply grid-cols-none m-auto flex flex-col gap-8px;
 
-      .el-button {
-        @apply min-h-50px;
+        .el-button {
+          @apply min-h-50px;
 
-        // PS: weight > unocss
-        padding: 10px !important;
+          // PS: weight > unocss
+          padding: 10px !important;
 
-        .btn-content {
-          .btn-top {
-            p {
-              @apply my-[5px];
+          .btn-content {
+            .btn-top {
+              p {
+                @apply my-[5px];
+              }
             }
           }
         }
