@@ -9,6 +9,11 @@ head:
   meta:
     - name: description
       content: Module - article
+sitemap:
+  loc: /module-article
+  lastmod: 2021-01-01
+  changefreq: monthly
+  priority: 0.8
 ---
 
 ### Comming soon!

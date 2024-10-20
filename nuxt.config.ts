@@ -1,6 +1,6 @@
 import process from 'node:process'
 import ElementPlus from 'unplugin-element-plus/vite'
-import { colorModeConf, contentConf, eslintConf, i18nConf, stylelintConf } from './app/config/module'
+import { colorModeConf, contentConf, eslintConf, i18nConf, sitemapConf, stylelintConf } from './app/config/module'
 
 const { GOOGLE_GTAG_ID, GOOGLE_ADSENSE_ID, YANDEX_METRIKA_ID, NODE_ENV = '' } = process.env
 const ssr: boolean = process.env.ssr !== 'false'
@@ -29,6 +29,12 @@ export default defineNuxtConfig({
       YANDEX_METRIKA_ID
     }
   },
+  // TODO: check generate https://content.nuxt.com/recipes/sitemap#server-route
+  // nitro: {
+  //   prerender: {
+  //     routes: ['/sitemap/urls']
+  //   }
+  // },
   build: {
     transpile: ['vue-i18n']
   },
@@ -59,15 +65,16 @@ export default defineNuxtConfig({
     }
   },
   modules: [
+    '@nuxt/content',
     '@nuxt/eslint',
-    '@unocss/nuxt',
     '@nuxtjs/color-mode',
-    '@element-plus/nuxt',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/google-adsense',
-    '@pinia/nuxt',
-    '@nuxt/content',
     '@nuxtjs/i18n',
+    '@nuxtjs/sitemap',
+    '@element-plus/nuxt',
+    '@pinia/nuxt',
+    '@unocss/nuxt',
     '@vueuse/nuxt',
     'nuxt-gtag'
   ],
@@ -76,6 +83,7 @@ export default defineNuxtConfig({
   content: contentConf,
   stylelint: stylelintConf,
   eslint: eslintConf,
+  sitemap: sitemapConf,
   googleAdsense: {
     onPageLoad: true,
     id: GOOGLE_ADSENSE_ID

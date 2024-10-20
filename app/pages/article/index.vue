@@ -4,9 +4,9 @@ import type { QueryBuilderParams } from '@nuxt/content'
 const localePath = useLocalePath()
 const { t } = useI18n()
 
-// PS: todo multi code
+// TODO: multi code
 // const query: QueryBuilderParams = { sort: [{ date: -1 }], locale: localeProperties.value.code }
-const query: QueryBuilderParams = { sort: [{ date: -1 }], locale: DEF_LOCALE_ARTICLE }
+const query: QueryBuilderParams = { sort: [{ date: -1 }], locale: DEF_LOCALE_ARTICLE, only: ['title', 'content-key', '_path'] }
 </script>
 
 <template>

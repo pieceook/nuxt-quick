@@ -23,7 +23,8 @@ export default withNuxt(
       'antfu/top-level-function': 'off',
       'no-console': 'off',
       'style/brace-style': 'off',
-      'eslint-comments/no-unlimited-disable': 'off'
+      'eslint-comments/no-unlimited-disable': 'off',
+      'ts/ban-ts-comment': 'off'
     }
   })
 )

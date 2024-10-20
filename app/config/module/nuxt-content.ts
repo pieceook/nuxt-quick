@@ -1,5 +1,5 @@
 import type { ModuleOptions } from '@nuxt/content'
-import { resolve } from 'node:path'
+// import { resolve } from 'node:path'
 import { DEF_LOCALE, I18N_LOCALES } from '../../utils/constants'
 
 const locales = I18N_LOCALES.map(item => item.code)
@@ -15,19 +15,18 @@ export const contentConf: Partial<ModuleOptions> = {
   experimental: {
     clientDB: true,
   },
-  sources: {
-    content: {
-      driver: 'fs',
-      // prefix: '/docs',
-      base: resolve(__dirname, '../../content'),
-      watch: {
-        ws: {
-          port: 4000,
-          showURL: true
-        }
-      }
-    },
-  },
+  // sources: {
+  //   content: {
+  //     driver: 'fs',
+  //     base: resolve(__dirname, '../../content'),
+  //     watch: {
+  //       ws: {
+  //         port: 4000,
+  //         showURL: true
+  //       }
+  //     }
+  //   },
+  // },
   highlight: {
     // Ref: https://github.com/shikijs/textmate-grammars-themes/tree/main/packages/tm-themes
     theme: {
