@@ -15,7 +15,7 @@ head:
 
 #### 1. 编译项目
 
-- 1.1 配置 ./.env.production 文件，例如 GOOGLE_GTAG_ID
+- 1.1 配置 `./app/config/env/.env.production` 文件，例如 `GOOGLE_GTAG_ID` 变量
 - 1.2 打包项目
 
 ```bash
@@ -55,10 +55,17 @@ module.exports = {
   apps: [
     {
       name: "nuxt-quick",
-      port: "3998",
       exec_mode: "cluster",
       instances: "1",
       script: "./.output/server/index.mjs",
+      env: {
+        NODE_ENV: "development",
+        PORT: "13998",
+      },
+      env_production: {
+        NODE_ENV: "production",
+        PORT: "3998",
+      },
     },
   ],
 };
@@ -67,7 +74,7 @@ module.exports = {
 #### 4. 启动项目
 
 ```bash
-$ pm2 start ecosystem.config.cjs
+$ pm2 start ecosystem.config.cjs --env production
 ```
 
 ## 二、Cloudflare Pages {#cloudflare-pages}

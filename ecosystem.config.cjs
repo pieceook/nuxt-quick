@@ -1,3 +1,6 @@
+// pm2 start ecosystem.config.cjs --env development
+// pm2 start ecosystem.config.cjs --env production
+
 module.exports = {
   apps: [
     {
@@ -7,11 +10,11 @@ module.exports = {
       script: './.output/server/index.mjs',
       env: {
         NODE_ENV: 'development',
-        port: '3998',
+        PORT: '13998',
       },
       env_production: {
         NODE_ENV: 'production',
-        port: '3998',
+        PORT: '3998',
       }
     }
   ]

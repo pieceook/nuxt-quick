@@ -26,7 +26,7 @@ if (toc) {
 
 <template>
   <div class="toc-wrap overflow-scroll rd-[6px] bg-[#fafafa] pb-[10px] pl-[15px] dark:bg-#242424ed">
-    <div class="pos-sticky top-[0] mb-[4px] mt-0 flex items-center bg-[#fafafa] pb-[6px] pt-[10px] font-size-[18px] dark:bg-#242424ed">
+    <div class="pos-sticky top-[0] mb-[4px] mt-0 flex items-center bg-[#fafafa] pb-[6px] pt-[10px] font-size-[18px] dark:bg-#242424f5">
       <div class="i-ep:guide h-[21px] w-[21px]" />
       {{ t('site.TableOfContents') }}
     </div>

@@ -7,3 +7,34 @@ useScroller('.guide-comp')
     <Toc data-allow-mismatch class="toc-comp max-h-[40vh]" />
   </div>
 </template>
+
+<style lang="scss" scoped>
+.guide-comp {
+  @include scrollbar-style;
+
+  :deep(.sub-item) {
+    .sub-item-text {
+      @apply rd-t-[6px] pos-sticky top-[0] z-1 m-0 pa-0 bg-[#fafafa] py-5px pl-15px dark:bg-#242424f5 font-size-[18px] lh-normal;
+    }
+
+    .items-wrap {
+      @apply grid-cols-none m-auto flex flex-col gap-8px;
+
+      .el-button {
+        @apply min-h-50px;
+
+        // PS: weight > unocss
+        padding: 10px !important;
+
+        .btn-content {
+          .btn-top {
+            p {
+              @apply my-[5px];
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</style>

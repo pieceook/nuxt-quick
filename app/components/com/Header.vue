@@ -32,7 +32,7 @@ const menuArr = [
     </div>
     <ClientOnly>
       <Teleport to=".def-layout">
-        <ComSider>
+        <ComMenuSider>
           <template #asider-slot>
             <div class="position-relative h-full w-[100vw] backdrop-blur-lg sm:hidden" @click="siteStore.toggleSiderCollapse()">
               <div class="m-x-[10px] flex flex-col items-center justify-center pt-[100px]">
@@ -45,7 +45,7 @@ const menuArr = [
               </div>
             </div>
           </template>
-        </ComSider>
+        </ComMenuSider>
       </Teleport>
     </ClientOnly>
   </header>

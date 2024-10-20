@@ -5,7 +5,7 @@ const siteStore = useSiteStore()
 </script>
 
 <template>
-  <aside class="com-sider top-[60px] lt-sm:top-[50px]" :class="{ 'is-collapsed': siteStore.isSiderCollapsed }">
+  <aside class="com-sider" :class="{ 'is-collapsed': siteStore.isSiderCollapsed }">
     <slot name="asider-slot" />
   </aside>
 </template>
@@ -16,6 +16,8 @@ const siteStore = useSiteStore()
   position: fixed;
   right: 0;
   z-index: 2;
+
+  @apply top-[60px] lt-sm:top-[50px];
 
   @media (prefers-reduced-motion: no-preference) {
     transition: transform 0.4s;

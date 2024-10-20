@@ -11,8 +11,7 @@ const handleYandexMetrika = (yandexId) => {
     clickmap:true,
     trackLinks:true,
     accurateTrackBounce:true,
-    webvisor:true,
-    ecommerce:"dataLayer"
+    webvisor:true
   });
 }
 /* eslint-enable */
@@ -22,8 +21,7 @@ export default defineNuxtPlugin({
   name: 'analytics-plugin',
   hooks: {
     'app:mounted': () => {
-      const config = useRuntimeConfig().public
-      handleYandexMetrika(config.YANDEX_METRIKA_ID)
+      handleYandexMetrika(useRuntimeConfig().public.YANDEX_METRIKA_ID)
     }
   }
 })

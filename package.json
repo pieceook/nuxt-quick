@@ -7,12 +7,12 @@
     "node": ">= 20.12.2"
   },
   "scripts": {
-    "dev": "nuxt dev --dotenv .env.development",
-    "build": "nuxt build --dotenv .env.development",
-    "build:prod": "nuxt build --dotenv .env.production",
+    "dev": "nuxt dev --dotenv ./app/config/env/.env.development",
+    "build": "nuxt build --dotenv ./app/config/env/.env.development",
+    "build:prod": "nuxt build --dotenv ./appconfig//env/.env.production",
     "preview": "npm run build && nuxt preview",
     "preview:prod": "npm run build:prod && nuxt preview",
-    "generate": "nuxt generate --dotenv .env.generate",
+    "generate": "nuxt generate --dotenv ./app/config/env/.env.generate",
     "lint": "eslint \"./**/*.{js,ts,jsx,tsx,vue}\" && stylelint \"./**/*.{vue,html,css,less,scss,sass}\"",
     "lint:fix": "eslint \"./**/*.{js,ts,jsx,tsx,vue}\" --fix && stylelint \"./**/*.{vue,html,css,less,scss,sass}\" --fix",
     "prepare": "nuxt prepare && husky && husky install"
@@ -36,6 +36,7 @@
     "@nuxtjs/color-mode": "^3.4.4",
     "@nuxtjs/google-adsense": "^3.0.0",
     "@nuxtjs/i18n": "^8.5.3",
+    "@nuxtjs/sitemap": "^6.1.2",
     "@pinia/nuxt": "^0.5.4",
     "@unocss/reset": "^0.62.3",
     "@vueuse/nuxt": "^11.1.0",
