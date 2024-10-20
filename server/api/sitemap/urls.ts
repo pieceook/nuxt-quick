@@ -7,7 +7,7 @@ import { asSitemapUrl, defineSitemapEventHandler } from '#imports'
 import { DEF_LOCALE_ARTICLE, I18N_LOCALES } from '@/utils/constants'
 
 export default defineSitemapEventHandler(async (event) => {
-  const query: QueryBuilderParams = { sort: [{ date: -1 }], only: ['title', 'content-key', '_path'] }
+  const query: QueryBuilderParams = { sort: [{ date: -1 }], only: ['title', 'content-key', '_path', 'date'] }
   const docs = await serverQueryContent(event, query).locale(DEF_LOCALE_ARTICLE).find()
   // const docs = await serverQueryContent(event, query).find()
 

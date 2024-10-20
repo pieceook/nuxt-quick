@@ -6,7 +6,7 @@ const { t } = useI18n()
 
 // TODO: multi code
 // const query: QueryBuilderParams = { sort: [{ date: -1 }], locale: localeProperties.value.code }
-const query: QueryBuilderParams = { sort: [{ date: -1 }], locale: DEF_LOCALE_ARTICLE, only: ['title', 'content-key', '_path'] }
+const query: QueryBuilderParams = { sort: [{ date: -1 }], locale: DEF_LOCALE_ARTICLE, only: ['title', 'content-key', '_path', 'date'] }
 </script>
 
 <template>
