@@ -82,6 +82,10 @@
       "Pinia": {
         "desc": "Share state across components and pages"
       },
+      "Sitemap": {
+        "desc": "Powerfully flexible XML Sitemaps that integrate seamlessly",
+        "text": "Sitemap"
+      },
       "Theme": {
         "desc": "Freely switch between dark and light theme modes",
         "text": "Theme"

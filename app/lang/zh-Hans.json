@@ -2,28 +2,28 @@
   "guide": {
     "Deploy": {
       "CloudflarePages": {
-        "desc": "可使用Worker、Pages部署（支持SSR、SSG）"
+        "desc": "可使用 Worker、Pages 部署（支持 SSR、SSG）"
       },
       "GitHub": {
         "Pages": {
-          "desc": "使用GitHub Pages的静态部署（SSG）"
+          "desc": "使用 GitHub Pages 的静态部署（SSG）"
         },
         "Release": {
-          "desc": "使用release action自动化管理项目版本"
+          "desc": "使用 release action 自动化管理项目版本"
         }
       },
       "SelfHosting": {
-        "desc": "可通过PM2等进程管理工具部署",
+        "desc": "可通过 PM2 等进程管理工具部署",
         "text": "自主部署"
       },
       "text": "部署"
     },
     "Dev": {
       "NVM": {
-        "desc": "一个Node.js的版本管理工具"
+        "desc": "一个 Node.js 的版本管理工具"
       },
       "Node": {
-        "desc": "跨平台的JavaScript 运行时环境"
+        "desc": "跨平台的 JavaScript 运行时环境"
       },
       "Vscode": {
         "desc": "跨平台的、高性能的、轻量级的代码编辑器"
@@ -32,29 +32,29 @@
     },
     "Format": {
       "Commitizen": {
-        "desc": "用于规范化Git Commit记录的工具"
+        "desc": "用于规范化 Git Commit 记录的工具"
       },
       "Eslint": {
-        "desc": "JavaScript代码检查工具，使代码风格更加一致并避免错误"
+        "desc": "JavaScript 代码检查工具，使代码风格更加一致并避免错误"
       },
       "Husky": {
-        "desc": "Git Hook工具，用来执行各种任务，比如代码格式化、代码质量检查..."
+        "desc": "Git Hook 工具，用来执行各种任务，比如代码格式化、代码质量检查..."
       },
       "Save": {
-        "desc": "借助Vscode插件实现保存并自动格式化代码",
+        "desc": "借助 Vscode 插件实现保存并自动格式化代码",
         "text": "Save & Auto Format"
       },
       "Stylelint": {
-        "desc": "CSS代码检查工具，规避CSS代码中的错误并保持一致的编码风格"
+        "desc": "CSS 代码检查工具，规避 CSS 代码中的错误并保持一致的编码风格"
       },
       "text": "代码规范"
     },
     "Framework": {
       "Nuxt": {
-        "desc": "基于Vue的SSR框架"
+        "desc": "基于 Vue 的 SSR 框架"
       },
       "TypeScript": {
-        "desc": "一种静态类型、弱类型语言，JavaScript的超集"
+        "desc": "一种静态类型、弱类型语言，JavaScript 的超集"
       },
       "Vue": {
         "desc": "用于构建用户界面的渐进式框架"
@@ -63,7 +63,7 @@
     },
     "Module": {
       "Adsense": {
-        "desc": "一个由Google推出的广告计划"
+        "desc": "一个由 Google 推出的广告计划"
       },
       "Analytics": {
         "gtag": {
@@ -72,7 +72,7 @@
         }
       },
       "Article": {
-        "desc": "对Markdown、自定义组件等友好支持",
+        "desc": "对 Markdown、自定义组件等友好支持",
         "text": "文章"
       },
       "MultiLang": {
@@ -82,18 +82,22 @@
       "Pinia": {
         "desc": "状态管理库，跨组件和页面共享数据状态"
       },
+      "Sitemap": {
+        "desc": "功能强大、灵活、无缝集成的 XML 站点地图",
+        "text": "网站地图"
+      },
       "Theme": {
         "desc": "深色和浅色主题模式自由切换",
         "text": "主題"
       },
       "VueUse": {
-        "desc": "一款基于Vue组合式API的函数工具集"
+        "desc": "一款基于 Vue 组合式 API 的函数工具集"
       },
       "text": "功能模块"
     },
     "QuickStart": {
       "Blog": {
-        "desc": "基于NuxtQuick快速部署一个自己的博客",
+        "desc": "基于 NuxtQuick 快速部署一个自己的博客",
         "text": "部署博客"
       },
       "Deploy": {
@@ -111,7 +115,7 @@
     },
     "UIDesign": {
       "ElementPlus": {
-        "desc": "一个优秀的UI组件库"
+        "desc": "一个优秀的 UI 组件库"
       },
       "ResponsiveLayout": {
         "desc": "使用弹式布局和媒体查询来实现响应式布局",

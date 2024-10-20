@@ -56,6 +56,7 @@ export default defineConfig({
   },
   shortcuts: [
     {
+      'max-line-1': 'overflow-hidden text-ellipsis line-clamp-1',
       'no-print': 'print:hidden',
       'text-style': 'text-[var(--el-text-color-regular)] hover:text-[var(--color-000-fff)]',
       'text-style2': 'text-[var(--el-color-info)] hover:text-[var(--color-000-fff)]',
@@ -75,6 +76,18 @@ export default defineConfig({
   ],
   rules: [
     ['print:hidden', { 'display': 'none', '@media': 'print' }],
+    [
+      /^max-line-(\w+)$/,
+      ([_, d]) => {
+        return {
+          'overflow': 'hidden',
+          'text-overflow': 'ellipsis',
+          'display': '-webkit-box',
+          '-webkit-line-clamp': d,
+          '-webkit-box-orient': 'vertical'
+        }
+      }
+    ],
     [
       /^bg-style-\[(.*)\]$/,
       ([_, d]) => {

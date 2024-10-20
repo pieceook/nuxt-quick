@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const localePath = useLocalePath()
 const { t } = useI18n()
+
 interface SubItemInter {
   text: string | ComputedRef<string>
   desc: string | ComputedRef<string>
@@ -42,6 +43,7 @@ const subArr: SubArrInter[] = [
       { text: t('guide.Module.Article.text'), desc: t('guide.Module.Article.desc'), iconClass: 'i-hugeicons:news min-w-[30px] min-h-[30px] bg-blue-5', officialLink: 'https://github.com/nuxt/content', articleLink: localePath('/article/module-article') },
       { text: 'Pinia', desc: t('guide.Module.Pinia.desc'), iconClass: 'i-logos:pinia min-w-[34px] min-h-[34px]', officialLink: 'https://github.com/vuejs/pinia' },
       { text: 'VueUse', desc: t('guide.Module.VueUse.desc'), iconClass: 'i-logos:vueuse min-w-[24px] min-h-[24px]', officialLink: 'https://github.com/vueuse/vueuse' },
+      { text: t('guide.Module.Sitemap.text'), desc: t('guide.Module.Sitemap.desc'), iconClass: 'i-cil:sitemap min-w-[29px] min-h-[29px]', officialLink: 'https://github.com/nuxt-modules/sitemap' },
       { text: t('guide.Module.Analytics.gtag.text'), desc: t('guide.Module.Analytics.gtag.desc'), iconClass: 'i-logos:google-analytics min-w-[26px] min-h-[26px]', officialLink: 'https://github.com/johannschopplich/nuxt-gtag' },
       { text: 'Google Adsense', desc: t('guide.Module.Adsense.desc'), iconClass: 'i-logos:google-adsense min-w-[28px] min-h-[28px]', officialLink: 'https://github.com/nuxt-modules/google-adsense' },
     ]
@@ -65,8 +67,6 @@ const subArr: SubArrInter[] = [
       { text: 'Stylelint', desc: t('guide.Format.Stylelint.desc'), iconClass: 'i-file-icons:stylelint min-w-[29px] min-h-[29px] bg-black', officialLink: 'https://github.com/stylelint/stylelint' },
       { text: 'Husky', desc: t('guide.Format.Husky.desc'), iconClass: 'i-la:git min-w-[33px] min-h-[33px] bg-#4a6e2a', officialLink: 'https://github.com/typicode/husky' },
       { text: 'Commitizen', desc: t('guide.Format.Commitizen.desc'), iconClass: 'i-file-icons:commitizen min-w-[30px] min-h-[30px] bg-black', officialLink: 'https://github.com/commitizen/cz-cli' },
-      // { text: 'Eslint', desc: 'uuuuuu', iconClass: 'i-logos:eslint min-w-[30px] min-h-[30px]' },
-      // { text: 'Stylelint', desc: 'uuuuuu', iconClass: 'i-logos:stylelint min-w-[29px] min-h-[29px]' },
     ]
   },
   {
@@ -92,7 +92,6 @@ const subArr: SubArrInter[] = [
       { text: 'Tutorial', desc: 'TODO', iconClass: 'i-streamline:arrow-roadmap min-w-[26px] min-h-[26px]' },
       { text: 'Third Login', desc: 'TODO', iconClass: 'i-basil:login-outline min-w-[36px] min-h-[36px]' },
       { text: 'Debug page', desc: 'TODO', iconClass: 'i-codicon:debug-rerun min-w-[30px] min-h-[30px]' },
-      // { text: 'Roadmap', desc: 'uuuuuu', iconClass: 'i-streamline:arrow-roadmap min-w-[28px] min-h-[28px]' },
     ]
   },
 ]
@@ -131,23 +130,23 @@ const handleJump = (item: SubItemInter) => {
 </script>
 
 <template>
-  <div class="flex flex-col">
-    <div v-for="(subItem, subIndex) in subArr" :key="subIndex" class="sub-item mb-[20px]">
-      <div class="sub-item-text mb-[8px] flex items-center text-[22px]">
+  <div class="guide-comp">
+    <div v-for="(subItem, subIndex) in subArr" :key="subIndex" class="sub-item">
+      <div class="sub-item-top">
         <ComImg v-if="isArticleContentkeyRoute" icon-class="i-streamline:target" />
         <span class="ml-[4px] min-h-[30px] min-w-[30px]">{{ subItem.text }}</span>
       </div>
-      <div class="items-wrap grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-[14px] lt-sm:gap-[10px]">
+      <div class="sub-item-bottom">
         <template
           v-for="(item, index) in subItem.items" :key="index">
-          <ElButton class="btn-wrap pos-relative min-h-[110px] w-full flex border rounded-xl shadow-md !m-0 !h-full lt-sm:min-h-[90px] !justify-start !p-[20px] !pt-[12px]" @click="handleJump(item)">
-            <div class="btn-content flex flex-col items-start justify-start whitespace-pre-wrap">
-              <div class="btn-top flex items-center justify-center">
+          <ElButton class="btn-wrap" @click="handleJump(item)">
+            <div class="btn-content">
+              <div class="btn-top">
                 <ComImg :icon-class="item.iconClass" />
-                <p class="ml-[8px] text-left text-[16px] lh-20px">{{ item.text }}</p>
+                <p class="top-text">{{ item.text }}</p>
               </div>
-              <div class="btn-desc mb-[16px] mt-[8px] break-anywhere text-left text-wrap text-[14px] font-normal line-height-[18px] text-style2">{{ item.desc }}</div>
-              <div class="pos-absolute bottom-[6px] right-[6px] flex gap-col-[10px]">
+              <div class="btn-desc">{{ item.desc }}</div>
+              <div class="btn-links">
                 <div v-if="item.articleLink" title="Article Link">
                   <NuxtLink :to="item.articleLink" target="_blank" @click.capture.stop><ComImg icon-class="i-streamline:new-file w-[15px] h-[15px]" /></NuxtLink>
                 </div>
@@ -175,3 +174,60 @@ const handleJump = (item: SubItemInter) => {
       </div>
       <ElButton @click="mockError">MockError</ElButton> -->
 </template>
+
+<style lang="scss" scoped>
+.guide-comp {
+  @apply flex flex-col;
+
+  .sub-item {
+    @apply mb-[20px];
+
+    .sub-item-top {
+      @apply mb-[8px] flex items-center text-[22px];
+    }
+
+    .sub-item-bottom {
+      @apply grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-[14px];
+      @apply lt-sm:grid-cols-3 lt-sm:gap-[10px];
+
+      :deep(.btn-wrap) {
+        @apply pos-relative min-h-[110px] w-full flex border rounded-xl shadow-md !m-0 !h-full !justify-start !p-[20px] !pt-[12px];
+        @apply lt-sm:min-h-[90px] lt-sm:!p-x-[10px];
+
+        span {
+          @apply w-full;
+          @apply lt-sm:justify-center;
+
+          .btn-content {
+            @apply flex flex-col items-start justify-start whitespace-pre-wrap;
+            @apply lt-sm:m-auto lt-sm:p-b-[10px];
+
+            .btn-top {
+              @apply flex items-center justify-center;
+              @apply lt-sm:flex-col;
+
+              .img-icon {
+                @apply lt-sm:m-b-[6px];
+              }
+
+              .top-text {
+                @apply ml-[8px] text-[16px] lh-20px max-line-2;
+                @apply lt-sm:ml-[0];
+              }
+            }
+          }
+
+          .btn-desc {
+            @apply mb-[16px] mt-[8px] break-anywhere text-left text-wrap text-[14px] font-normal line-height-[18px];
+            @apply lt-sm:hidden text-style2;
+          }
+
+          .btn-links {
+            @apply pos-absolute bottom-[6px] right-[6px] flex gap-col-[10px];
+          }
+        }
+      }
+    }
+  }
+}
+</style>

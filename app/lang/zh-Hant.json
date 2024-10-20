@@ -2,28 +2,28 @@
   "guide": {
     "Deploy": {
       "CloudflarePages": {
-        "desc": "可使用Worker、Pages部署（支持SSR、SSG）"
+        "desc": "可使用 Worker、Pages 部署（支持SSR、SSG）"
       },
       "GitHub": {
         "Pages": {
-          "desc": "使用GitHub Pages的靜態部署（SSG）"
+          "desc": "使用 GitHub Pages 的靜態部署（SSG）"
         },
         "Release": {
-          "desc": "使用release action自動化管理專案版本"
+          "desc": "使用 release action 自動化管理專案版本"
         }
       },
       "SelfHosting": {
-        "desc": "可透過PM2等進程管理工具部署",
+        "desc": "可透過 PM2 等進程管理工具部署",
         "text": "自主部署"
       },
       "text": "部署"
     },
     "Dev": {
       "NVM": {
-        "desc": "一個Node.js的版本管理工具"
+        "desc": "一個 Node.js 的版本管理工具"
       },
       "Node": {
-        "desc": "跨平台的JavaScript 執行環境"
+        "desc": "跨平台的 JavaScript 執行環境"
       },
       "Vscode": {
         "desc": "跨平台的、高效能的、輕量級的程式碼編輯器"
@@ -32,29 +32,29 @@
     },
     "Format": {
       "Commitizen": {
-        "desc": "用於規範化Git Commit 記錄的工具"
+        "desc": "用於規範化 Git Commit 記錄的工具"
       },
       "Eslint": {
-        "desc": "JavaScript代碼檢查工具，讓代碼風格更加一致並避免錯誤"
+        "desc": "JavaScript 代碼檢查工具，讓代碼風格更加一致並避免錯誤"
       },
       "Husky": {
-        "desc": "Git Hook工具，用來執行各種任務，例如代碼格式化、代碼品質檢查..."
+        "desc": "Git Hook 工具，用來執行各種任務，例如代碼格式化、代碼品質檢查..."
       },
       "Save": {
-        "desc": "借助Vscode插件實現保存並自動格式化代碼",
+        "desc": "借助 Vscode 插件實現保存並自動格式化代碼",
         "text": "Save & Auto Format"
       },
       "Stylelint": {
-        "desc": "CSS代碼檢查工具，避免CSS代碼中的錯誤並保持一致的代碼風格"
+        "desc": "CSS 代碼檢查工具，避免 CSS 代碼中的錯誤並保持一致的代碼風格"
       },
       "text": "程式碼規範"
     },
     "Framework": {
       "Nuxt": {
-        "desc": "基於Vue的SSR框架"
+        "desc": "基於 Vue 的 SSR 框架"
       },
       "TypeScript": {
-        "desc": "一種靜態型別、弱型別語言，JavaScript的超集"
+        "desc": "一種靜態型別、弱型別語言，JavaScript 的超集"
       },
       "Vue": {
         "desc": "用於建立使用者介面的漸進式框架"
@@ -72,7 +72,7 @@
         }
       },
       "Article": {
-        "desc": "對Markdown、自定义组件等友好支持",
+        "desc": "對 Markdown、自定义组件等友好支持",
         "text": "文章"
       },
       "MultiLang": {
@@ -82,18 +82,22 @@
       "Pinia": {
         "desc": "跨元件和頁面共享狀態"
       },
+      "Sitemap": {
+        "desc": "功能強大、靈活、無縫整合的 XML 網站地圖",
+        "text": "網站地圖"
+      },
       "Theme": {
         "desc": "深色和淺色主題模式自由切換",
         "text": "主題"
       },
       "VueUse": {
-        "desc": "一款基于Vue组合式API的函数工具集 "
+        "desc": "一款基于 Vue 组合式 API 的函数工具集 "
       },
       "text": "功能模块"
     },
     "QuickStart": {
       "Blog": {
-        "desc": "基於NuxtQuick快速部署一個自己的博客",
+        "desc": "基於 NuxtQuick 快速部署一個自己的博客",
         "text": "部署博客"
       },
       "Deploy": {
@@ -111,7 +115,7 @@
     },
     "UIDesign": {
       "ElementPlus": {
-        "desc": "一個優秀的UI组件庫"
+        "desc": "一個優秀的 UI 组件庫"
       },
       "ResponsiveLayout": {
         "desc": "使用彈式佈局和媒體查詢來實現響應式佈局",
