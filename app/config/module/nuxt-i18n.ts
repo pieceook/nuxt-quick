@@ -15,7 +15,7 @@ export const i18nConf: NuxtI18nOptions = {
   vueI18n: './app/config/module/vue-i18n.ts',
   langDir: 'lang',
   // types: 'composition',
-  strategy: 'prefix_and_default',
+  strategy: 'prefix_except_default',
   defaultLocale: DEF_LOCALE,
   lazy: true,
   locales: I18N_LOCALES,

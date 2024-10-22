@@ -2,6 +2,12 @@ export const DEF_LOCALE_ARTICLE = 'zh-Hans'
 export const DEF_LOCALE = 'en'
 export const GITHUB_URL = 'https://github.com/pieceook/nuxt-quick'
 
+interface Locale {
+  code: string
+  file: string
+  language: string
+  name: string
+}
 export const I18N_LOCALES: Locale[] = [
   {
     code: 'en',

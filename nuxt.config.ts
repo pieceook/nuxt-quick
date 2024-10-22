@@ -2,7 +2,7 @@ import process from 'node:process'
 import ElementPlus from 'unplugin-element-plus/vite'
 import { colorModeConf, contentConf, eslintConf, i18nConf, sitemapConf, stylelintConf } from './app/config/module'
 
-const { GOOGLE_GTAG_ID, GOOGLE_ADSENSE_ID, YANDEX_METRIKA_ID, NODE_ENV = '' } = process.env
+const { GOOGLE_GTAG_ID, GOOGLE_ADSENSE_ID, YANDEX_METRIKA_ID, NODE_ENV = '', NUXT_PUBLIC_SITE_URL } = process.env
 const ssr: boolean = process.env.ssr !== 'false'
 const isProd = ['production'].includes(NODE_ENV)
 console.warn('##CONF##\n', JSON.stringify({ ssr, NODE_ENV, GOOGLE_GTAG_ID, GOOGLE_ADSENSE_ID, YANDEX_METRIKA_ID }, null, 2))
@@ -29,18 +29,16 @@ export default defineNuxtConfig({
       YANDEX_METRIKA_ID
     }
   },
-  // TODO: check generate https://content.nuxt.com/recipes/sitemap#server-route
-  // nitro: {
-  //   prerender: {
-  //     routes: ['/sitemap/urls']
-  //   }
-  // },
   build: {
     transpile: ['vue-i18n']
   },
   telemetry: false,
   typescript: {
     typeCheck: true
+  },
+  // PS: ref https://nuxtseo.com/site-config/getting-started/background#site-config-examples
+  site: {
+    url: NUXT_PUBLIC_SITE_URL
   },
   vite: {
     build: {
@@ -78,6 +76,17 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-gtag'
   ],
+  // TODO: check generate
+  // routeRules: {
+  //   '/': {
+  //     prerender: true
+  //   }
+  // },
+  // nitro: {
+  //   prerender: {
+  //     crawlLinks: true
+  //   }
+  // },
   i18n: i18nConf,
   colorMode: colorModeConf,
   content: contentConf,
