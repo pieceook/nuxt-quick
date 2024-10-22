@@ -60,7 +60,7 @@ $ git checkout blog # 切换至 blog 分支
 - Project name：**取一个ProjectName（CF会提供一个免费的访问域名，子域名为该 ProjectName）**
 - Production branch: **blog**
 - Framework preset: **Nuxt.js**
-- Build command: **npm run build:prod**
+- Build command: **npm run build:production**
 - Build output directory: **dist**
   ::cust-img-preview{imgSrc="/images/content/quick-start-deploy-blog/0x03.png"}
   ::

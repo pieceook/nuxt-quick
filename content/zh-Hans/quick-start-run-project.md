@@ -11,7 +11,7 @@ head:
       content: QuickStart - Run project
 ---
 
-## 一、安装 Vscode & 插件 {#install-vscode}
+## 一、安装 Vscode & 插件 {#install-vscode-plugins}
 
 #### Vscode
 
@@ -19,7 +19,7 @@ head:
 
 #### Vscode插件
 
-PS：详见项目下的 .vscode/extensions.json
+PS：详见项目下的 `.vscode/extensions.json`
 
 - [安装 Vue Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar){target=\_blank}
 - [安装 ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint){target=\_blank}
@@ -45,11 +45,11 @@ $ nvm use v20.12.2
 
 - 方式1: 推荐此方式，方便后续各种部署
 
-  1. 先在GitHub Fork [nuxt-quick项目](https://github.com/pieceook/nuxt-quick){target=\_blank}
+  1. 先在 GitHub Fork [nuxt-quick项目](https://github.com/pieceook/nuxt-quick){target=\_blank}
   2. 再下载项目
 
   ```bash
-  $ git clone https://github.com/${这里替换成你的GitHub用户名}/nuxt-quick
+  $ git clone https://github.com/${Your GitHub Name}/nuxt-quick
   ```
 
 - 方式2:
@@ -61,12 +61,12 @@ $ git clone https://github.com/pieceook/nuxt-quick
 
 ## 四、启动项目 {#run-proejct}
 
-- 1. 使用Vscode打开项目 nuxt-quick （因Vscode插件作用范围缘故，建议单独新开一个Vscode窗口打开，体验更好～）
-- 2. Terminal终端执行命令（在项目根目录下）
+- 1. 使用 `Vscode` 打开项目 `nuxt-quick` （因 Vscode 插件作用范围缘故，建议单独新开一个 Vscode 窗口打开，体验更好～）
+- 2. `Terminal` 终端执行命令（在项目根目录下）
 
 ```bash
 # 安装依赖若遇到网络问题
-  # 1. 建议安装依赖前在终端设置proxy，开启方式见「Terminal终端设置proxy」
+  # 1. 建议安装依赖前在终端设置proxy，开启方式见下方「附：Terminal终端设置proxy」
   # 2. 或使用其它npm镜像
 $ npm install # 安装依赖
 
@@ -76,7 +76,7 @@ $ npm run dev
 
 ---
 
-- Terminal终端设置proxy
+- 附：`Terminal` 终端设置 proxy（解决依赖安装遇到的网络问题）
 
 ```bash
   export http_proxy=http://127.0.0.1:${Your ProxyPort}

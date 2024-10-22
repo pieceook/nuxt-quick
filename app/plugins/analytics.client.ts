@@ -21,7 +21,12 @@ export default defineNuxtPlugin({
   name: 'analytics-plugin',
   hooks: {
     'app:mounted': () => {
-      handleYandexMetrika(useRuntimeConfig().public.YANDEX_METRIKA_ID)
+      const YANDEX_METRIKA_ID = useRuntimeConfig().public.YANDEX_METRIKA_ID
+      if (YANDEX_METRIKA_ID) {
+        handleYandexMetrika(YANDEX_METRIKA_ID)
+        return
+      }
+      console.warn(`analytics.client.ts: YANDEX_METRIKA_ID=${YANDEX_METRIKA_ID}`)
     }
   }
 })

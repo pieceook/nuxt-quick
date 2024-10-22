@@ -55,4 +55,4 @@
 
 ### 部署
 
-[自主部署](https://nuxt-quick.pieceook.com/article/quick-start-deploy-project) · [Cloudflare Pages](https://nuxt-quick.pieceook.com/article/quick-start-deploy-project#cloudflare-pages) · [GitHub Pages](http://localhost:3998/zh-Hans/article/quick-start-deploy-project#github-pages) · [GitHub Release](https://nuxt-quick.pieceook.com/article/quick-start-deploy-project#github-release)
+[自主部署](https://nuxt-quick.pieceook.com/article/quick-start-deploy-project) · [Cloudflare Pages](https://nuxt-quick.pieceook.com/article/quick-start-deploy-project#cloudflare-pages) · [GitHub Pages](http://localhost:3998/zh-Hans/article/quick-start-deploy-project#github-pages) · [GitHub Release](https://nuxt-quick.pieceook.com/article/github-actions-publish-release)

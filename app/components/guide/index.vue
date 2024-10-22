@@ -83,7 +83,7 @@ const subArr: SubArrInter[] = [
       { text: t('guide.Deploy.SelfHosting.text'), desc: t('guide.Deploy.SelfHosting.desc'), iconClass: 'i-fontisto:cloud-up min-w-[34px] min-h-[34px] bg-cyan', articleLink: localePath('/article/quick-start-deploy-project#self-hosting') },
       { text: 'Cloudflare Pages', desc: t('guide.Deploy.CloudflarePages.desc'), iconClass: 'i-cbi:cloudflare min-w-[34px] min-h-[34px] bg-#f38021', articleLink: localePath('/article/quick-start-deploy-project#cloudflare-pages'), officialLink: 'https://developers.cloudflare.com/pages/framework-guides/deploy-a-nuxt-site/#create-a-pages-project' },
       { text: 'GitHub Pages', desc: t('guide.Deploy.GitHub.Pages.desc'), iconClass: 'i-iconoir:github min-w-[29px] min-h-[29px] bg-black', articleLink: localePath('/article/quick-start-deploy-project#github-pages'), officialLink: 'https://nuxt.com/deploy/github-pages' },
-      { text: 'GitHub Release', desc: t('guide.Deploy.GitHub.Release.desc'), iconClass: 'i-devicon-plain:githubactions min-w-[30px] min-h-[30px] bg-black', articleLink: localePath('/article/quick-start-deploy-project#github-release'), officialLink: 'https://github.com/googleapis/release-please-action' },
+      { text: 'GitHub Release', desc: t('guide.Deploy.GitHub.Release.desc'), iconClass: 'i-devicon-plain:githubactions min-w-[30px] min-h-[30px] bg-black', articleLink: localePath('/article/github-actions-publish-release'), officialLink: 'https://github.com/googleapis/release-please-action' },
     ]
   },
   {
