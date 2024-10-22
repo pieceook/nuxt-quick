@@ -21,7 +21,7 @@ head:
   2. 再下载项目
 
   ```bash
-  $ git clone https://github.com/${这里替换成你的GitHub用户名}/nuxt-quick
+  $ git clone https://github.com/${Your GitHub Name}/nuxt-quick
   ```
 
 - 方式2:
