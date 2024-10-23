@@ -1,6 +1,6 @@
 import process from 'node:process'
 import ElementPlus from 'unplugin-element-plus/vite'
-import { colorModeConf, contentConf, eslintConf, i18nConf, sitemapConf, stylelintConf } from './app/config/module'
+import { colorModeConf, contentConf, eslintConf, i18nConf, robotsConf, sitemapConf, stylelintConf } from './app/config/module'
 
 const { GOOGLE_GTAG_ID, GOOGLE_ADSENSE_ID, YANDEX_METRIKA_ID, NODE_ENV = '', NUXT_PUBLIC_SITE_URL } = process.env
 const ssr: boolean = process.env.ssr !== 'false'
@@ -78,6 +78,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-adsense',
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
     '@element-plus/nuxt',
     '@pinia/nuxt',
     '@unocss/nuxt',
@@ -101,6 +102,7 @@ export default defineNuxtConfig({
   stylelint: stylelintConf,
   eslint: eslintConf,
   sitemap: sitemapConf,
+  robots: robotsConf,
   googleAdsense: {
     onPageLoad: true,
     id: GOOGLE_ADSENSE_ID
