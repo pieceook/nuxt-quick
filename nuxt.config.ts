@@ -13,8 +13,16 @@ export default defineNuxtConfig({
     head: {
       title: 'NuxtQuick',
       link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon-48x48.png', sizes: '48x48' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'shortcut icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        { rel: 'manifest', href: '/site.webmanifest' },
         { rel: 'prefetch', as: 'image', href: '/images/icon-site-logo-text.light.svg' },
         { rel: 'prefetch', as: 'image', href: '/images/icon-site-logo-text.dark.svg' },
+      ],
+      meta: [
+        { name: 'apple-mobile-web-app-title', content: 'NuxtQuick' }
       ],
       viewport: 'width=device-width, initial-scale=1'
     }
