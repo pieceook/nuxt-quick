@@ -1,6 +1,6 @@
 import process from 'node:process'
 import ElementPlus from 'unplugin-element-plus/vite'
-import { colorModeConf, contentConf, eslintConf, i18nConf, sitemapConf, stylelintConf } from './app/config/module'
+import { colorModeConf, contentConf, eslintConf, i18nConf, robotsConf, sitemapConf, stylelintConf } from './app/config/module'
 
 const { GOOGLE_GTAG_ID, GOOGLE_ADSENSE_ID, YANDEX_METRIKA_ID, NODE_ENV = '', NUXT_PUBLIC_SITE_URL } = process.env
 const ssr: boolean = process.env.ssr !== 'false'
@@ -13,8 +13,16 @@ export default defineNuxtConfig({
     head: {
       title: 'NuxtQuick',
       link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon-48x48.png', sizes: '48x48' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'shortcut icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        { rel: 'manifest', href: '/site.webmanifest' },
         { rel: 'prefetch', as: 'image', href: '/images/icon-site-logo-text.light.svg' },
         { rel: 'prefetch', as: 'image', href: '/images/icon-site-logo-text.dark.svg' },
+      ],
+      meta: [
+        { name: 'apple-mobile-web-app-title', content: 'NuxtQuick' }
       ],
       viewport: 'width=device-width, initial-scale=1'
     }
@@ -70,6 +78,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-adsense',
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
     '@element-plus/nuxt',
     '@pinia/nuxt',
     '@unocss/nuxt',
@@ -93,6 +102,7 @@ export default defineNuxtConfig({
   stylelint: stylelintConf,
   eslint: eslintConf,
   sitemap: sitemapConf,
+  robots: robotsConf,
   googleAdsense: {
     onPageLoad: true,
     id: GOOGLE_ADSENSE_ID
