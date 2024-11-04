@@ -8,7 +8,7 @@ tags:
 head:
   meta:
     - name: description
-      content: QuickStart - Deploy project
+      content: 快速开始 - 部署项目 | NuxtQuick | pieceook
 ---
 
 ## 方式一：自主部署 {#self-hosting}

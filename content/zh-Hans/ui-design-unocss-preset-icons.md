@@ -8,7 +8,7 @@ tags:
 head:
   meta:
     - name: description
-      content: QuickStart - Run project
+      content: 优雅的图标集成方案：UnoCSS preset-icons | NuxtQuick | pieceook
 ---
 
 ### Comming soon!

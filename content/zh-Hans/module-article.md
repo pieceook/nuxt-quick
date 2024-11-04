@@ -8,7 +8,7 @@ tags:
 head:
   meta:
     - name: description
-      content: Module - article
+      content: 掌握更多NuxtQuick的Markdown使用技巧 | NuxtQuick | pieceook
 ---
 
 ### Comming soon!

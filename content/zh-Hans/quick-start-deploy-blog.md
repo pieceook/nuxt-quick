@@ -8,7 +8,7 @@ tags:
 head:
   meta:
     - name: description
-      content: QuickStart - Deploy Blog
+      content: 快速开始 - 部署一个博客 | NuxtQuick | pieceook
 ---
 
 ## 一、下载项目

@@ -8,7 +8,7 @@ tags:
 head:
   meta:
     - name: description
-      content: Module - multi lang
+      content: 扩展更多的多语言 | NuxtQuick | pieceook
 ---
 
 ### Comming soon!

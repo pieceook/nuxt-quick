@@ -8,7 +8,7 @@ tags:
 head:
   meta:
     - name: description
-      content: QuickStart - Run project
+      content: 快速开始 - 启动项目 | NuxtQuick | pieceook
 ---
 
 ## 一、安装 Vscode & 插件 {#install-vscode-plugins}

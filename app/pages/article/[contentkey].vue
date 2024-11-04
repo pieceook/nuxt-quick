@@ -39,6 +39,17 @@ provide('article-toc', articleToc)
 
 if (!article) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+} else {
+  useSeoMeta({
+    titleTemplate: (title: string | undefined) => {
+      return `${title} | NuxtQuick | pieceook`
+    },
+    ogTitle: `${article.title} | NuxtQuick | pieceook`,
+    ogDescription: `${article.title} | NuxtQuick | pieceook`,
+    twitterDescription: `${article.title} | NuxtQuick | pieceook`,
+    // PS: useless, will be overrided by md desc
+    // description: `${article.title} - pieceook`,
+  })
 }
 </script>
 

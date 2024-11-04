@@ -8,7 +8,7 @@ tags:
 head:
   meta:
     - name: description
-      content: GitHub Actions实现Release自动发版
+      content: GitHub Actions实现Release自动发版 | NuxtQuick | pieceook
 ---
 
 ## 一、配置Tokens、Secrets {#conf-tokens-secrets}
