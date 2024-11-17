@@ -8,7 +8,7 @@ tags:
 head:
   meta:
     - name: description
-      content: QuickStart - Run project
+      content: 快速开始 - 启动项目 | NuxtQuick | pieceook
 ---
 
 ## 一、安装 Vscode & 插件 {#install-vscode-plugins}
@@ -30,15 +30,17 @@ PS：详见项目下的 `.vscode/extensions.json`
 ## 二、安装 NVM & Node.js {#install-nvm-node}
 
 ```bash
-# Linux
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-$ nvm install v20.12.2 # 新开终端窗口再执行
-$ nvm use v20.12.2
-
 # MacOS
 $ brew install nvm
 $ nvm install v20.12.2
 $ nvm use v20.12.2
+$ npm install -g pnpm
+
+# Linux
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+$ nvm install v20.12.2 # 新开终端窗口再执行
+$ nvm use v20.12.2
+$ npm install -g pnpm
 ```
 
 ## 三、下载项目 {#fork-clone-proejct}
@@ -67,11 +69,11 @@ $ git clone https://github.com/pieceook/nuxt-quick
 ```bash
 # 安装依赖若遇到网络问题
   # 1. 建议安装依赖前在终端设置proxy，开启方式见下方「附：Terminal终端设置proxy」
-  # 2. 或使用其它npm镜像
-$ npm install # 安装依赖
+  # 2. 或使用其它pnpm镜像
+$ pnpm install # 安装依赖
 
 # 启动项目
-$ npm run dev
+$ pnpm dev
 ```
 
 ---

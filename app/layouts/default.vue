@@ -38,7 +38,8 @@ watch(locale, () => {
       <slot />
     </div>
     <ComFooter />
-    <ComSvgs />
+    <!-- PS: just test svg import -->
+    <!-- <ComSvgs /> -->
     <ComGoTop />
   </div>
 </template>

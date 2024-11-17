@@ -8,7 +8,7 @@ tags:
 head:
   meta:
     - name: description
-      content: UI Design - responsive layout
+      content: UI Design - responsive layout | NuxtQuick | pieceook
 ---
 
 ### Comming soon!

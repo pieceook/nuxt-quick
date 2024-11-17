@@ -39,4 +39,13 @@
   "i18n-ally.namespace": true,
   "i18n-ally.pathMatcher": "{locale}.json",
   "i18n-ally.extract.autoDetect": false,
+  // Exclude search file
+  "search.exclude": {
+    ".nuxt": true,
+    ".output": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/logs": true,
+    "**/pnpm-lock.yaml": true
+  }
 }

@@ -8,7 +8,7 @@ tags:
 head:
   meta:
     - name: description
-      content: UI Design - sticky footer
+      content: 布局技巧 - 了解一下粘性页脚 | NuxtQuick | pieceook
 ---
 
 ### Comming soon!

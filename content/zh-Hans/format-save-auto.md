@@ -8,7 +8,7 @@ tags:
 head:
   meta:
     - name: description
-      content: Format - save & auto
+      content: 提高开发效率 - 编码自动格式化 | NuxtQuick | pieceook
 ---
 
 ### Comming soon!

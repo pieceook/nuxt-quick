@@ -8,7 +8,7 @@ tags:
 head:
   meta:
     - name: description
-      content: QuickStart - Deploy project
+      content: 快速开始 - 部署项目 | NuxtQuick | pieceook
 ---
 
 ## 方式一：自主部署 {#self-hosting}
@@ -16,7 +16,7 @@ head:
 #### 1. 安装 PM2 {#install-pm2}
 
 ```bash
-# 1.1 安装 NVM
+# 1.1 全局安装 NVM
   # Linux系统
   $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
   $ nvm install v20.12.2 # 新开终端窗口再执行
@@ -27,7 +27,7 @@ head:
   $ nvm install v20.12.2
   $ nvm use v20.12.2
 
-# 1.2 安装 PM2
+# 1.2 全局安装 PM2
 $ npm install -g pm2 \
 && pm2 install pm2-logrotate \
 && pm2 conf pm2-logrotate \

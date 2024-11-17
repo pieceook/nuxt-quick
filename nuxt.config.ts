@@ -38,7 +38,7 @@ export default defineNuxtConfig({
     }
   },
   build: {
-    transpile: ['vue-i18n']
+    transpile: ['vue-i18n'],
   },
   telemetry: false,
   typescript: {
@@ -60,7 +60,8 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          // PS: $CDN_URL is empty by default. If you need to configure the CDN URL, you can fill it in.
+          // PS: $CDN_URL is empty by default.
+          // If you need to configure the CDN URL, you can fill it in.
           additionalData: `
             @use "@/assets/element-plus/override.scss" as element;
             @use "@/assets/mixin.scss" as *;
