@@ -22,8 +22,8 @@ head:
 - `package.json`
 
 ```bash
-$ npm install @unocss/nuxt @unocss/reset
-$ npm install @iconify/json -D
+$ pnpm install @unocss/nuxt @unocss/reset
+$ pnpm install @iconify/json -D
 ```
 
 - `nuxt.config.ts`
