@@ -1,4 +1,7 @@
 {
+  // Base conf
+  "editor.tabSize": 2,
+  "files.eol": "\n",
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,
   "editor.formatOnSave": true,
@@ -7,6 +10,7 @@
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
+  // Enable stylelint
   "stylelint.validate": [
     "css",
     "scss",
@@ -46,6 +50,7 @@
     "**/node_modules": true,
     "**/dist": true,
     "**/logs": true,
-    "**/pnpm-lock.yaml": true
+    "**/pnpm-lock.yaml": true,
+    "**/.eslintcache": true,
   }
 }

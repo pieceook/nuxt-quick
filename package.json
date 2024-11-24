@@ -2,9 +2,13 @@
   "name": "nuxt-quick",
   "version": "1.0.0",
   "type": "module",
-  "private": true,
+  "packageManager": "pnpm@9.12.3",
+  "license": "MIT",
+  "homepage": "https://nuxt-quick.pieceook.com",
+  "description": "A better Nuxt solution for Web.",
   "engines": {
-    "node": ">= 20.12.2"
+    "node": ">= 20.12.2",
+    "pnpm": ">= 9.12.3"
   },
   "scripts": {
     "dev": "nuxt dev --dotenv ./app/config/env/.env.development",
